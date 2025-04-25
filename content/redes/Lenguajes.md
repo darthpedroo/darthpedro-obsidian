@@ -115,5 +115,23 @@ Below are a couple different common display resolutions, try to capture the widt
 ![Image Description](/images/Pasted%20image%2020250425193033.png)
 
 ## Lesson 14: It's all conditional
+As we mentioned before, it's always good to be precise, and that applies to coding, talking, and even regular expressions. For example, you wouldn't write a grocery list for someone to _Buy more .*_ because you would have no idea what you could get back. Instead you would write _Buy more milk_ or _Buy more bread_, and in regular expressions, we can actually define these conditionals explicitly.
 
+Specifically when using groups, you can use the _|_ (_logical OR, aka. the pipe_) to denote _different possible sets of characters_. In the above example, I can write the pattern "Buy more (milk|bread|juice)" to match only the strings Buy more milk, Buy more bread, or Buy more juice.
 
+Like normal groups, you can use any sequence of characters or metacharacters in a condition, for example, ([cb]ats*|[dh]ogs?) would match either cats or bats, or, dogs or hogs. Writing patterns with many conditions can be hard to read, so you should consider making them separate patterns if they get too complex.
+
+Go ahead and try writing a conditional pattern that matches only the lines with small fuzzy creatures below.
+
+![Image Description](/images/Pasted%20image%2020250425193414.png)
+
+## Lesson 15: Other special characters
+This lesson will cover some extra metacharacters, as well as the results of captured groups.
+
+We have already learned the most common metacharacters to capture digits using _\d_, whitespace using _\s_, and alphanumeric letters and digits using _\w_, but regular expressions also provides a way of specifying the opposite sets of each of these metacharacters by using their upper case letters. For example, _\D_ represents any _non-digit_ character, _\S_ any _non-whitespace_ character, and _\W_ any _non-alphanumeric_ character (such as punctuation). Depending on how you compose your regular expression, it may be easier to use one or the other.
+
+Additionally, there is a special metacharacter _\b_ which matches the boundary between a word and a non-word character. It's most useful in capturing entire words (for example by using the pattern _\w+\b_).
+
+One concept that we will not explore in great detail in these lessons is _back referencing_, mostly because it varies depending on the implementation. However, many systems allow you to reference your captured groups by using _\0_ (usually the full matched text), _\1_ (group 1), _\2_ (group 2), etc. This is useful for example when you are in a text editor and doing a search and replace using regular expressions to swap two numbers, you can search for "(\d+)-(\d+)" and replace it with "\2-\1" to put the second captured number first, and the first captured number second for example.
+
+Below are a number of different strings, try out the different types of metacharacters or anything we've learned in the previous lessons and continue on when you are ready.
