@@ -1,0 +1,592 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+  <title>
+  bash · darthpedro notes
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="darthpedro">
+<meta name="description" content="
+  Cuestionario Bandit
+  
+    
+    Link to heading
+  
+
+
+  Pregunta 1
+  
+    
+    Link to heading
+  
+
+
+¿Qué es SSH y para qué sirve? ¿En qué se diferencia de Telnet? ¿De qué maneras lo utilizaron para conectarse al servidor de bandit? ¿Qué es PuTTY y para qué sirve?
+
+Como funciona SSH
+
+  Que es SSH
+  
+    
+    Link to heading
+  
+
+SSH es un protocolo de red que permite acceder de manera segura a una computadora a través de una red insegura (internet)">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="bash">
+  <meta name="twitter:description" content="Cuestionario Bandit Link to heading Pregunta 1 Link to heading ¿Qué es SSH y para qué sirve? ¿En qué se diferencia de Telnet? ¿De qué maneras lo utilizaron para conectarse al servidor de bandit? ¿Qué es PuTTY y para qué sirve? Como funciona SSH
+Que es SSH Link to heading SSH es un protocolo de red que permite acceder de manera segura a una computadora a través de una red insegura (internet)">
+
+<meta property="og:url" content="http://localhost:1313/redes/bash/">
+  <meta property="og:site_name" content="darthpedro notes">
+  <meta property="og:title" content="bash">
+  <meta property="og:description" content="Cuestionario Bandit Link to heading Pregunta 1 Link to heading ¿Qué es SSH y para qué sirve? ¿En qué se diferencia de Telnet? ¿De qué maneras lo utilizaron para conectarse al servidor de bandit? ¿Qué es PuTTY y para qué sirve? Como funciona SSH
+Que es SSH Link to heading SSH es un protocolo de red que permite acceder de manera segura a una computadora a través de una red insegura (internet)">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="redes">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/redes/bash/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/">
+      darthpedro notes
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/lyrics/">Lyrics</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/gpp/">Gpp</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/redes/bash/">
+          bash
+        </a>
+      </h1>
+    </header>
+
+    <h1 id="cuestionario-bandit">
+  Cuestionario Bandit
+  <a class="heading-link" href="#cuestionario-bandit">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h1>
+<h2 id="pregunta-1">
+  Pregunta 1
+  <a class="heading-link" href="#pregunta-1">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>¿Qué es SSH y para qué sirve? ¿En qué se diferencia de Telnet? ¿De qué maneras lo utilizaron para conectarse al servidor de bandit? ¿Qué es PuTTY y para qué sirve?</li>
+</ul>
+<p><a href="https://www.youtube.com/watch?v=5JvLV2-ngCI"  class="external-link" target="_blank" rel="noopener">Como funciona SSH</a></p>
+<h3 id="que-es-ssh">
+  Que es SSH
+  <a class="heading-link" href="#que-es-ssh">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>SSH es un protocolo de red que permite acceder de manera segura a una computadora a través de una red <strong>insegura</strong> (internet)</p>
+<p>SSH se creó para reemplazar los sistemas de login inseguros como <strong>Telnet</strong>.</p>
+<p>El problema de Telnet es que los paquetes se envían <strong>públicamente</strong> con las claves. (Se envía usuario y contraseña x el internet)</p>
+<p>SSH encripta los datos del mensaje.
+El problema es que un atacante puede <strong>ver</strong> que está encriptado esto pero pueden hacer poco con esta información.</p>
+<p>El paquete SSH contiene:</p>
+<ul>
+<li>Packet Length: Te dice el tamaño del paquete</li>
+<li>Padding Amount: Cuánto padding se va a usar.</li>
+<li>Payload: La data real que necesitas</li>
+<li>Padding: Random bytes que se combinan con el payload para complicar el sniffing de paquetes</li>
+<li>Message Authentication Code: Mensaje que verifica que la data no se haya modificiado.</li>
+</ul>
+<p>Cuando esta encriptado solo se ve el Packet Length y el Message Authentication Code.</p>
+<h3 id="conectarse-al-server-de-bandit">
+  Conectarse al server de bandit
+  <a class="heading-link" href="#conectarse-al-server-de-bandit">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Para conectarse al server de bandit me loguee con el commando <strong>ssh</strong>, especificando la url de bandit, el puerto y el usuario. Luego te pedía una contraseña y podías acceder al server.</p>
+<h3 id="putty">
+  Putty
+  <a class="heading-link" href="#putty">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><a href="https://www.instagram.com/aprendiendo.con.personajes/"  class="external-link" target="_blank" rel="noopener">Reel sobre putty</a>
+<a href="https://www.lenovo.com/in/en/glossary/putty/"  class="external-link" target="_blank" rel="noopener">https://www.lenovo.com/in/en/glossary/putty/</a></p>
+<p>Putty es un emulador de terminal que permite conectarse a dispositivos o computadoras remotas mediante varios protocolos (SSH, Telnet, etc)</p>
+<p>La principal ventaja de putty es que tiene una interfaz más amigable para conectarse en vez de estar haciendo todas las conexiones con comandos desde la consola. Se pueden guardar configuraciones y automatizar tareas con putty.</p>
+<h2 id="pregunta-2">
+  Pregunta 2
+  <a class="heading-link" href="#pregunta-2">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>De cinco ejemplos de comandos que se utilicen para navegar/manipular el filesystem, cada uno con por lo menos dos opciones que modifiquen el comportamiento por defecto del comando.</li>
+</ul>
+<h3 id="rm">
+  rm
+  <a class="heading-link" href="#rm">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Borra referencias a objetos del filesystem. Por defecto no borra directorios.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm text.txt
+</span></span></code></pre></div><p>-&gt; Borra el archivo</p>
+<p><strong>Parametros extra:</strong></p>
+<ul>
+<li>-r : Recursivo. Borra recursivamente las carpetas y los archivos que haya dentro de estas.</li>
+<li>-f : Force: No pide confirmación para borrar un archivo</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>rm -rf directory 
+</span></span></code></pre></div><p>-&gt; Borra el directorio y todo lo q haya adentro.</p>
+<h3 id="ls">
+  ls
+  <a class="heading-link" href="#ls">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Lista archivos y directorios.</p>
+<p><strong>Parametros extra</strong>:</p>
+<ul>
+<li>-l : Muestra los detalles de cada archivo/directorio. Los permisos, el tamaño, propietario, etc.</li>
+<li>-a Muestra archivos ocultos.</li>
+</ul>
+<p>El comando <strong>ls -la</strong> es el alias del comando <strong>ll</strong></p>
+<h3 id="mkdir">
+  mkdir
+  <a class="heading-link" href="#mkdir">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Permite crear directorios.</p>
+<p><strong>Parametros extra:</strong></p>
+<ul>
+<li>-p: Permite crear directorios anidados sin que tiren error.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir test/test1/test2
+</span></span></code></pre></div><p>Si no existe test tira el error &ldquo;no such file or directory&rdquo;</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -p test/test1/test2
+</span></span></code></pre></div><p>Crea el directorio anidado sin tirar error.</p>
+<ul>
+<li>-m Especifica permisos al crear el directorio</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mkdir -m <span style="color:#a5d6ff">755</span> test
+</span></span></code></pre></div><h3 id="mv">
+  mv
+  <a class="heading-link" href="#mv">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Mueve archivos</p>
+<p><strong>Parametros especiales:</strong></p>
+<ul>
+<li>-i: Si se va a sobreescribir un archivo, pide confirmación antes de hacerlo.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv -i test test2
+</span></span></code></pre></div><p>Si ya existe test en test2, muestra el mensaje:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv: overwrite <span style="color:#a5d6ff">&#39;test2/test&#39;</span>?
+</span></span></code></pre></div><ul>
+<li>-n: No sobreescribe archivos existentes.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv -i test test2
+</span></span></code></pre></div><p>Si ya existe test en test2, muestra el mensaje:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>mv: not replacing <span style="color:#a5d6ff">&#39;test2/test&#39;</span>
+</span></span></code></pre></div><h3 id="chown">
+  chown
+  <a class="heading-link" href="#chown">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Cambia el propietario y/o el grupo de un archivo o directorio. <strong>chown = change ownership</strong></p>
+<p><strong>Parametros adicionaes:</strong></p>
+<ul>
+<li>-R: Cambia el propietario de forma recusriva en los directorios</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>chown -R porky:porky test
+</span></span></code></pre></div><ul>
+<li>&ndash;from : Cambia si pertenece a un usuario especifico.</li>
+</ul>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>sudo chown --from<span style="color:#ff7b72;font-weight:bold">=</span>porky root:root test
+</span></span></code></pre></div><p>Cambia de porky a root. Lo hace de manera recursiva.</p>
+<h2 id="pregunta-3">
+  Pregunta 3
+  <a class="heading-link" href="#pregunta-3">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><a href="https://www.reddit.com/r/bash/comments/1dmfkes/learning_file_permissions_what_is_the_owner_group/"  class="external-link" target="_blank" rel="noopener">https://www.reddit.com/r/bash/comments/1dmfkes/learning_file_permissions_what_is_the_owner_group/</a>
+<a href="https://www.redhat.com/en/blog/linux-file-permissions-explained"  class="external-link" target="_blank" rel="noopener">https://www.redhat.com/en/blog/linux-file-permissions-explained</a></p>
+<ul>
+<li>Explique brevemente los distintos niveles de usuarios (owner, group, user) y describa cómo se relacionan con el filesystem.</li>
+</ul>
+<p><strong>Owner</strong>: Es el propietario de un archivo o directorio. Puede cambiar los permisos de dicho archivo (lectura, escritura, etc) para él mismo , otros usuarios u otros grupos. <strong>Generalemente el owner de un archivo no debería cambiar pero si alguien es root puede hacerlo</strong></p>
+<p><strong>Grupo</strong>: Se puede asociar una carpeta o un archivo con un grupo de usuarios. Estos miembros compartes ciertos permisos sobre dicha carpeta o archivo.</p>
+<p><strong>User/Other:</strong> Se aplican estos permisos cuando el usuario que interactúa no es ni el owner ni forma parte de un grupo</p>
+<h2 id="pregunta-4">
+  Pregunta 4
+  <a class="heading-link" href="#pregunta-4">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>¿Por qué programas como gzip necesitan que el archivo a descomprimir posea en su nombre la extensión .gz explícitamente? ¿Cómo resolvieron este inconveniente a la hora de resolver el level 12 -&gt; level 13?</li>
+</ul>
+<p><a href="https://unix.stackexchange.com/questions/709708/why-gzip-utility-cares-about-extension"  class="external-link" target="_blank" rel="noopener">https://unix.stackexchange.com/questions/709708/why-gzip-utility-cares-about-extension</a></p>
+<p>Gzip usa la extensión .gz para reconocer un archivo y no tener que acceder al contenido para determinar si lo debe descomprimir o no.
+Para ponerle nombre al archivo descomprimido, gzip borra el nombre de la extensión. Sin la extensión, no se podría renombrar o debería buscar el nombre original en las propiedades del archivo, lo cuál ralentizaría el comando</p>
+<p>Para resolver el ejercicio de bandit, había que usar el comando:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>file <span style="color:#a5d6ff">&#34;test&#34;</span>
+</span></span></code></pre></div><p>Esto servía para ver que tipo de compresión tenía. Si se comprimió usando <strong>gzip</strong>, había que copiar el archivo a otro llamado <strong>test2.gz</strong> o agregarle el formato .gz al nombre del archivo.</p>
+<h2 id="pregunta-5">
+  Pregunta 5
+  <a class="heading-link" href="#pregunta-5">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<ul>
+<li>Explique con sus palabras las diferencias y similitudes entre la criptografía simétrica y asimétrica. ¿Por qué es más seguro utilizar criptografía asimétrica comparado al uso de contraseñas?</li>
+</ul>
+<p><strong>Fuentes:</strong>
+<a href="https://security.stackexchange.com/questions/9957/can-i-use-a-private-key-as-a-public-key-and-vice-versa"  class="external-link" target="_blank" rel="noopener">https://security.stackexchange.com/questions/9957/can-i-use-a-private-key-as-a-public-key-and-vice-versa</a>
+<a href="https://www.instagram.com/p/DHmMImEuHmn/"  class="external-link" target="_blank" rel="noopener">https://www.instagram.com/p/DHmMImEuHmn/</a>
+<a href="https://www.youtube.com/watch?v=o_g-M7UBqI8"  class="external-link" target="_blank" rel="noopener">https://www.youtube.com/watch?v=o_g-M7UBqI8</a></p>
+<p>Tanto la criptografía simétrica como la asimétrica utilizan encriptación basada en llaves, sin embargo, lo hacen de manera distinta.</p>
+<h3 id="criptografía-simétrica">
+  Criptografía Simétrica:
+  <a class="heading-link" href="#criptograf%c3%ada-sim%c3%a9trica">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Se utiliza la misma tanto para encriptar como para desencriptar un mensaje
+<img src="/images/Pasted%20image%2020250324190856.png" alt="Image Description"></p>
+<p>En este ejemplo se muestra como se encripta la palabra hello. Se usa un algoritmo que mueve las letras y se usa como clave secreta el <strong>3</strong>, que representa las posiciones hacia la derecha a mover cada letra.
+En este caso se encripta y desencrpita usando la misma clave secreta.</p>
+<h3 id="criptografía-asimétrica">
+  Criptografía asimétrica
+  <a class="heading-link" href="#criptograf%c3%ada-asim%c3%a9trica">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Se utilizan distintas claves para encriptar y desencriptar</p>
+<p><img src="/images/Pasted%20image%2020250324191350.png" alt="Image Description"></p>
+<p>Se usan dos claves, una pública y una privada.</p>
+<p>Este algoritmo encripta con una clave, pero requiere de la otra clave para desencriptarlo.</p>
+<p>Por ejemplo, podemos encriptar con la clave privada pero si queremos desencriptar el mensaje, tendremos que usar la clave pública. De la misma manera, si encriptamos con la clave pública tendremos que usar la clave privada para desencriptar.</p>
+<p>En la practica, existen dos casos:</p>
+<p><strong>Firmar y encriptar</strong>:</p>
+<p><strong>Encriptar</strong>: Se encripta con la clave pública y luego una persona desencripta con su clave privada.</p>
+<p><strong>Firmar</strong>: Una persona <strong>encripta</strong> con su clave privada, firmando así el mensaje. Luego, el resto de personas que tengan la clave pública pueden verificar que el mensaje fue firmado por determinada persona con su clave privada.</p>
+<h3 id="ventajas-y-desventajas-de-cada-uno">
+  Ventajas y desventajas de cada uno
+  <a class="heading-link" href="#ventajas-y-desventajas-de-cada-uno">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<h4 id="encriptación-asimétrica">
+  Encriptación asimétrica
+  <a class="heading-link" href="#encriptaci%c3%b3n-asim%c3%a9trica">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p><strong>Desventajas</strong> :
+Es más lento el algoritmo ya que requiere claves mucho más largas
+El texto a encriptar se expande en tamaño. Hay que enviar mas bytes de información</p>
+<p><strong>Ventajas</strong> :
+Al no compartir la clave privada, la encriptación se vuelve más segura.</p>
+<h4 id="encriptación-simétrica">
+  Encriptación simétrica
+  <a class="heading-link" href="#encriptaci%c3%b3n-sim%c3%a9trica">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p><strong>Desventajas</strong>:
+La llave privada se comparte, generando que sea menos seguro.</p>
+<p><strong>Ventajas</strong>:
+Es más rápido el algoritmo
+El texto cifrado tiene el mismo tamaño que el texto normal</p>
+<h3 id="casos-de-uso">
+  Casos de uso
+  <a class="heading-link" href="#casos-de-uso">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p><strong>Encriptación Asimétrica</strong>: Se utiliza para datos más limitados y pequeños</p>
+<p><strong>Encriptación simétrica</strong>: Se utiliza para volumenes masivos de datos.</p>
+<h2 id="pregunta-6">
+  Pregunta 6
+  <a class="heading-link" href="#pregunta-6">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><a href="https://www.youtube.com/watch?v=zMKacHGuIHI&amp;t"  class="external-link" target="_blank" rel="noopener">https://www.youtube.com/watch?v=zMKacHGuIHI&t</a>
+<a href="https://en.wikipedia.org/wiki/Standard_streams"  class="external-link" target="_blank" rel="noopener">https://en.wikipedia.org/wiki/Standard_streams</a></p>
+<p>¿Qué son los standard streams y para qué se usan?
+Explique cada uno de ellos (stdin, stdout, stderr) ¿Cómo se los puede modificar (en una shell de linux)?
+¿Qué es un pipeline?</p>
+<p>De por lo menos dos ejemplos de manipulación de la entrada o salida estándar de un comando a partir de algunos de los “levels” realizados de bandit.</p>
+<h3 id="standard-streams">
+  Standard Streams
+  <a class="heading-link" href="#standard-streams">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Son canales predefinidos usados para la entrada y salida de datos entre los procesos y el sistema operativo. Actúan como una <strong>interfaz</strong>* para que los programas puedan recibir y enviar entradas y salidas sin tener que preocuparse por la implementación especifica de los mismos.
+<img src="/images/Pasted%20image%2020250324204127.png" alt="Image Description"></p>
+<h4 id="stdin-standard-input">
+  stdin (Standard Input)
+  <a class="heading-link" href="#stdin-standard-input">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Se leen los datos de entrada, comunmente desde el teclado.
+No todos los programas requieren este input, por ejemplo, <strong>ls</strong> muestra los directorios sin pedir ningún input adicional.</p>
+<p>Para modificar este stream se puede hacer lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>cat &lt; test.txt
+</span></span></code></pre></div><p>Esto va a cambiar la entrada a un archivo de texto en vez de al teclado.</p>
+<h4 id="stdout-standard-output">
+  stdout (Standard output)
+  <a class="heading-link" href="#stdout-standard-output">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Se escriben datos de salida, generalmente en la pantalla.
+No todos los programas producen comandos de salida. Por ejemplo, <strong>mv</strong> no genera ninguna salida por pantalla.</p>
+<p>Para modificar este stream se puede hacer lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>echo <span style="color:#a5d6ff">&#34;hola prof&#34;</span> &gt; test.txt
+</span></span></code></pre></div><p>Esto hace que el mensaje salga en test.txt en vez de la consola.</p>
+<h4 id="stderr-standard-error">
+  stderr (Standard error)
+  <a class="heading-link" href="#stderr-standard-error">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h4>
+<p>Se muestran mensajes de error o diagnósticos. Es independiente de stodut y puede ser redirigido de manera separada.
+Su principal utilidad es que permite distinguir entre <strong>salidas y error</strong></p>
+<p>Para modificar este stream se puede hacer lo siguiente:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ls wrong_nonexistent_directory 2&gt; error.log
+</span></span></code></pre></div><p><img src="/images/Pasted%20image%2020250324204530.png" alt="Image Description"></p>
+<h3 id="que-es-un-pipeline">
+  Que es un pipeline
+  <a class="heading-link" href="#que-es-un-pipeline">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<p>Un pipeline es una serie de procesos encadenados entre sí por sus <strong>standard streams</strong>.
+La salida <strong>(stdout)</strong> de cada proceso se le pasa al siguiente como input <strong>(stdin)</strong></p>
+<p>Un ejemplo puede ser:</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>man cp | grep copy
+</span></span></code></pre></div><p>El comando <strong>cp</strong> produce como salida su página de manual y se le pasa al <strong>grep</strong> como entrada. Grep devuelve como salida todas las ocurrencias de la palabra &ldquo;copy&rdquo; en la página del manual.</p>
+<h3 id="manipulación-de-entrada-y-salida-en-bandit">
+  Manipulación de entrada y salida en bandit
+  <a class="heading-link" href="#manipulaci%c3%b3n-de-entrada-y-salida-en-bandit">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h3>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>ll | grep <span style="color:#a5d6ff">1033</span>
+</span></span></code></pre></div><p><strong>ll</strong> le pasa como entrada a grep los detalles de todos los archivos y grep busca aquéllos que pesen exactamente 1033 bytes.</p>
+<div class="highlight"><pre tabindex="0" style="color:#e6edf3;background-color:#0d1117;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>2&gt;/dev/null
+</span></span></code></pre></div><p>Al agregar esto al final de un comando, el <strong>stderror</strong> será redirigido a <strong>/dev/null</strong>. Este archivo se descarta cada vez que se le escribe algo así que es perfecto para descartar errores.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     darthpedro 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>

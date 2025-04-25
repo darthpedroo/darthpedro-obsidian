@@ -2,9 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>http://localhost:1313/lyrics/forty-six-and-2/</loc>
+  </url><url>
+    <loc>http://localhost:1313/authors/</loc>
+  </url><url>
+    <loc>http://localhost:1313/school/redes/bash/</loc>
+  </url><url>
     <loc>http://localhost:1313/categories/</loc>
   </url><url>
     <loc>http://localhost:1313/</loc>
+  </url><url>
+    <loc>http://localhost:1313/school/gpp/el-taller-y-el-cronometro/</loc>
+  </url><url>
+    <loc>http://localhost:1313/lyrics/</loc>
+  </url><url>
+    <loc>http://localhost:1313/lyrics/rosseta-stoned/</loc>
+  </url><url>
+    <loc>http://localhost:1313/school/</loc>
+  </url><url>
+    <loc>http://localhost:1313/second-troll-post/</loc>
+  </url><url>
+    <loc>http://localhost:1313/series/</loc>
   </url><url>
     <loc>http://localhost:1313/tags/</loc>
   </url>

@@ -1,0 +1,31 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'darthpedro notes'
+theme = "PaperModX"
+defaultTheme="dark"
+#themtheme = ["github.com/theNewDynamic/gohugo-theme-ananke/v2"]
+
+
+# Configuración de los tipos de contenido
+[params]
+    # Puedes definir un tipo de contenido global aquí si quieres usarlo como predeterminado
+    defaultContentType = "post"
+
+# Configuración de caché (esto no debería afectar mucho tu frontmatter, pero es importante tenerlo claro)
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'
+
+# Configuración para el menú
+[menu]
+  [[menu.main]]
+    name = "Home"
+    url = "/"
+    weight = 1
+
+[[menu.main]]
+  identifier = "lyrics"
+  name = "Lyrics"
+  url = "/lyrics/"
+  weight = 2
+

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>darthpedro notes</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Procesos
+Procesos Hijos
+Fork
+Y si quiero abrir otra cosa?
+Tengo que hacer un FORK si o sí
+exec -&gt;
+Como distinguir entre el hijo y el padre
+Si queremos ejecutar exec solo en el hijo, tenemos que DISTINGUIR ENTRE ELLOS.
+Fork -&gt; Devuelve un número.
+En el padre este numero es el PID.
+En el hijo, vale 0. Porque es el hijo.
+![[Pasted image 20250409184400.png]]
+Que pasa cuando hay un Fork
+Se copia toda la pcb del proceso padre, con todos los valores (menos el PID). -&gt; Si hago esa copia, tengo dos procesos que corren el mismo código.">
+    <meta name="generator" content="Hugo 0.146.7">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/public/school/sistemas-operativos/clases/clase-4/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/public/school/sistemas-operativos/clases/clase-4/">
+  <meta property="og:site_name" content="darthpedro notes">
+  <meta property="og:title" content="darthpedro notes">
+  <meta property="og:description" content="Procesos Procesos Hijos Fork Y si quiero abrir otra cosa? Tengo que hacer un FORK si o sí exec -&gt;
+Como distinguir entre el hijo y el padre Si queremos ejecutar exec solo en el hijo, tenemos que DISTINGUIR ENTRE ELLOS. Fork -&gt; Devuelve un número. En el padre este numero es el PID. En el hijo, vale 0. Porque es el hijo.
+![[Pasted image 20250409184400.png]]
+Que pasa cuando hay un Fork Se copia toda la pcb del proceso padre, con todos los valores (menos el PID). -&gt; Si hago esa copia, tengo dos procesos que corren el mismo código.">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="public">
+
+  <meta itemprop="name" content="darthpedro notes">
+  <meta itemprop="description" content="Procesos Procesos Hijos Fork Y si quiero abrir otra cosa? Tengo que hacer un FORK si o sí exec -&gt;
+Como distinguir entre el hijo y el padre Si queremos ejecutar exec solo en el hijo, tenemos que DISTINGUIR ENTRE ELLOS. Fork -&gt; Devuelve un número. En el padre este numero es el PID. En el hijo, vale 0. Porque es el hijo.
+![[Pasted image 20250409184400.png]]
+Que pasa cuando hay un Fork Se copia toda la pcb del proceso padre, con todos los valores (menos el PID). -&gt; Si hago esa copia, tengo dos procesos que corren el mismo código.">
+  <meta itemprop="wordCount" content="445">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="darthpedro notes">
+  <meta name="twitter:description" content="Procesos Procesos Hijos Fork Y si quiero abrir otra cosa? Tengo que hacer un FORK si o sí exec -&gt;
+Como distinguir entre el hijo y el padre Si queremos ejecutar exec solo en el hijo, tenemos que DISTINGUIR ENTRE ELLOS. Fork -&gt; Devuelve un número. En el padre este numero es el PID. En el hijo, vale 0. Porque es el hijo.
+![[Pasted image 20250409184400.png]]
+Que pasa cuando hay un Fork Se copia toda la pcb del proceso padre, con todos los valores (menos el PID). -&gt; Si hago esa copia, tengo dos procesos que corren el mismo código.">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        darthpedro notes
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Publics
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><h1 id="procesos">Procesos</h1>
+<h2 id="procesos-hijos">Procesos Hijos</h2>
+<h3 id="fork">Fork</h3>
+<h3 id="y-si-quiero-abrir-otra-cosa">Y si quiero abrir otra cosa?</h3>
+<p>Tengo que hacer un FORK si o sí
+exec -&gt;</p>
+<h3 id="como-distinguir-entre-el-hijo-y-el-padre">Como distinguir entre el hijo y el padre</h3>
+<p>Si queremos ejecutar exec solo en el hijo, tenemos que <strong>DISTINGUIR ENTRE ELLOS</strong>.
+Fork -&gt; Devuelve un número.
+En el padre este numero es el PID.
+En el hijo, vale 0. Porque es el hijo.</p>
+<p>![[Pasted image 20250409184400.png]]</p>
+<h3 id="que-pasa-cuando-hay-un-fork">Que pasa cuando hay un Fork</h3>
+<p>Se copia toda la pcb del proceso padre, con todos los valores (menos el PID). -&gt; Si hago esa copia, tengo dos procesos que corren el mismo código.</p>
+<p>Para diferenciarlos, el valor de retorno cambia según el padre y el hijo. Padre =&gt; PID. HIjo =&gt; 0.</p>
+<p>El hijo resume la ejecución en el mismo punto que el padre, cuando termina de hacer el fork. Como tal, no sabe que es hijo. Lo sabemos nosotros con el PID =&gt; 0.</p>
+<h3 id="para-pensar-forks">Para pensar Forks</h3>
+<p>![[Pasted image 20250409190842.png]]</p>
+<p>Se hacen 4 procesos.</p>
+<p>[[Padre e Hijo.excalidraw]]
+![[Pasted image 20250409191310.png]]</p>
+<h3 id="fork-bomb">Fork Bomb</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>int main<span style="color:#f92672">(){</span>
+</span></span><span style="display:flex;"><span>	<span style="color:#66d9ef">while</span><span style="color:#f92672">(</span>1<span style="color:#f92672">)</span> fork;
+</span></span><span style="display:flex;"><span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>Vamos a desglosarla:</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>:<span style="color:#f92672">(){</span> :|:&amp; <span style="color:#f92672">}</span>;:
+</span></span></code></pre></div><ul>
+<li><code>:()</code> — define una función llamada <code>:</code> (sí, eso es legal en Bash).</li>
+<li><code>{ :|:&amp; }</code> — dentro de la función, se llama a sí misma dos veces usando un <strong>pipe</strong> (<code>|</code>) y ejecutando en segundo plano (<code>&amp;</code>):
+<ul>
+<li><code>:|:</code> — llama a sí misma y pasa la salida a otra instancia de sí misma.</li>
+<li><code>&amp;</code> — ejecuta el proceso en segundo plano, permitiendo que siga lanzando más instancias.</li>
+</ul>
+</li>
+<li><code>;</code> — termina la definición de la función.</li>
+<li><code>:</code> — llama a la función por primera vez, lo que inicia la reacción en cadena.</li>
+</ul>
+<h3 id="terminación-de-un-proceso">Terminación de un proceso</h3>
+<ul>
+<li>El mismo proceso termina normalmente -&gt; este mismo llama a <strong>exit</strong></li>
+<li>El proceso es terminado por otro proceso -&gt; <strong>kill()</strong></li>
+<li>El proceso es terminado por el sistema operativo (falta de recursos, error. etc)</li>
+</ul>
+<h3 id="señales">Señales</h3>
+<ul>
+<li>La relación entre padre e hijo permite la intercomunicación entre estos ya que conocen el PID del otro</li>
+<li><strong>Si se conoce el PID del otro , se pueden MANDAR SEÑALES</strong></li>
+<li>El padre puede esperar a que el hijo termine</li>
+<li><strong>kill()</strong> se usa para enviar señales a otros procesos y puede ser utilizada para terminar un proceso.</li>
+</ul>
+<h3 id="filicidio">Filicidio</h3>
+<ul>
+<li>Común que un proceso padre mate al hijo al terminar.</li>
+<li>Esta es una forma de evitar que los procesos hijos queden huerfanos.</li>
+</ul>
+<h3 id="procesos-zombies">Procesos zombies</h3>
+<p>Proceso huerfano -&gt; Se convierte en un proceso zombie.
+Si padre hace wait y lo matan -&gt; Cuando el hijo muere , el hijo le avisa al padre que muere (SIEMPRE LO HACE.)
+El hijo muere pero no se borra de la PCB, porque el PADRE es el que se encarga de eso.</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  darthpedro notes 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

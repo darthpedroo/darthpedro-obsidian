@@ -1,9 +1,57 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'darthpedro notes'
-theme = ["github.com/theNewDynamic/gohugo-theme-ananke/v2"]
-[caches]
-  [caches.images]
-    dir = ':cacheDir/images'
+baseurl = "http://www.example.com"
+title = "darthpedro notes"
+theme = "hugo-coder"
+languagecode = "es"
+defaultcontentlanguage = "es"
 
 
+[pagination]
+pagerSize = 20
+
+[markup.highlight]
+style = "github-dark"
+
+[params]
+  author = "darthpedro"
+  info = "Backend Developer"
+  description = "darthpedro's personal website"
+  keywords = "blog,developer,personal"
+  avatarurl = "images/avatar.png"
+  #gravatar = "john.doe@example.com"
+
+  faviconSVG = "/img/favicon.svg"
+  favicon_32 = "/img/favicon-32x32.png"
+  favicon_16 = "/img/favicon-16x16.png"
+
+  since = 2025
+
+  enableTwemoji = true
+
+  colorScheme = "auto"
+  hidecolorschemetoggle = false
+
+  # customCSS = ["css/custom.css"]
+  # customSCSS = ["scss/custom.scss"]
+  # customJS = ["js/custom.js"]
+
+[taxonomies]
+  category = "categories"
+  series = "series"
+  tag = "tags"
+  author = "authors"
+
+# Social links
+[[params.social]]
+  name = "Github"
+  icon = "fa-brands fa-github fa-2x"
+  weight = 1
+  url = "https://github.com/darthpedroo"
+# Menu links
+[[menu.main]]
+  name = "Lyrics"
+  weight = 1
+  url  = "lyrics/"
+[[menu.main]]
+  name = "school"
+  weight = 2
+  url = "school/"

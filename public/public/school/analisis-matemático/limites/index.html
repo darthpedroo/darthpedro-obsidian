@@ -1,0 +1,550 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>darthpedro notes</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Límite en un punto: denición formal
+Después de haber visto distintos ejemplos, estamos preparados para la deni-
+ción formal de límite en un punto.
+8
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Figura 2.8: Análisis del límite de una función partida.
+Denición 2.1. Sea una función f y un intervalo abierto I que
+incluye al valor a, si f está denida en I o en I − {a}, armamos
+que: lim
+x→af (x) = L sí y solo sí, para todo ε &gt; 0 existe algún δ &gt; 0
+tal que,
+|f (x) − L| &lt; ε siempre que 0 &lt; |x − a| &lt; δ
+Comprender esta denición no es fácil. En lenguaje coloquial signica lo si-
+guiente:
+Tanto ε (épsilon) como δ (delta) son números reales positivos. La idea es que
+ambos sean muy pequeños, tanto como uno quiera.
+La denición nos dice que siempre que x esté muy cerca del valor de a (en
+símbolos 0 &lt; |x − a| &lt; δ), es decir, si la distancia que hay de algún valor de
+x al valor a es muy pequeña
+entonces los valores de la función estarán muy cerca de L, es decir, la distancia
+entre los valores de la función y su límite L será muy chica. En símbolos
+|f (x) − L| &lt; ε.
+Algunos comentarios:
+El valor a puede o no pertenecer al dominio de f .
+Los valores de x estarán muy cerca de a, esto se restringe al pedir que el valor
+absoluto de la resta sea menor que delta, el cual dijimos que es un número
+positivo pequeño; pero x nunca valdrá a. Si así fuera, la resta nos daría 0,
+sin embargo pedimos que sea mayor estricto que 0.
+La restricción anterior no se pide en la expresión |f (x) − L| &lt; ε ya que f (x)
+podría valer L.
+9
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Otra forma de plantear la denición de límite
+Podemos pensar la denición de límite de otra manera, pero para eso antes
+necesitamos denir dos conceptos muy parecidos.
+Entorno de un punto. Cualquier intervalo abierto que contenga a un punto
+a como su punto medio será un entorno de a, y se escribirá E(a). La distancia
+del valor a hasta el borde del intervalo será el radio al que llamaremos r, por
+lo que dicho intervalo será (a − r, a &#43; r). Esto quiere decir que el intervalo
+estará formado por todos los valores reales x que cumplen a − r &lt; x &lt; a &#43; r.
+De acuerdo a esto, la expresión |f (x) − L| &lt; ε podemos pensarla como un
+entorno del valor L con radio ε, dado que −ε &lt; f (x) − L &lt; ε, por denición
+de módulo y despejando convenientemente, queda
+f (x) − ε &lt; L &lt; f (x) &#43; ε
+Entorno reducido. Un entorno reducido de un punto es un entorno que no
+incluye al punto en cuestión. Su notación es E∗(a). Es decir, si r es el radio
+de un entorno reducido, el intervalo será (a − r, a &#43; r) − {a} . Por lo tanto,
+la expresión 0 &lt; |x − a| &lt; δ la podemos pensar como un entorno reducido
+del punto a.
+Con los dos conceptos anteriores armamos que lim
+x→af (x) = L si para todo E(L)
+existe cierto E∗(a) tal que f (x)  E(L) siempre que x  E∗(a).
+La idea es la misma que explicamos anteriormente: los valores de la función
+estarán cerca de su límite, es decir, pertenecerán al entorno de L cuando los valores
+de x estén cercanos al valor a, o sea, pertenecerán al otro entorno.
+Ejemplo 2.7. Comencemos aplicando la denición a un ejemplo bien sencillo.
+f (x) = x
+Queremos ver qué sucede cuando x tiende a, por ejemplo, 3. Si calculamos el límite
+grácamente, podremos ver que el límite da 3. Sin embargo, buscamos aplicar la
+denición. Entonces, si 0 &lt; |x − a| &lt; δ, debería suceder que |f (x) − L| &lt; ε. Como
+a y L valen 3, nos queda:
+si 0 &lt; |x − 3| &lt; δ entonces, deber´ıa suceder que |x − 3| &lt; ε.
+Vemos que el módulo que está al principio de la proposición tiene la misma ex-
+presión que el módulo que está al nal, por lo que la proposición anterior será
+verdadera siempre y cuando δ ≤ ε. Por lo tanto, si alguien elige, por ejemplo,
+10
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Figura 2.9: Límite de la función identidad: a cierto δ le corresponde un mismo ε
+ε = 0,1 alcanzará con elegir δ = 0,1 o cualquier otro número positivo menor para
+que cumpla lo pedido. Y si se elige ε = 0,001, nos alcanzará con elegir δ = 0,001
+o cualquier otro número menor.
+Ejemplo 2.8. Si la función fuera f (x) = 2x &#43; 5 y quisiéramos demostrar que el
+límite cuando x tiende a 3 es 11, no es tan sencillo como en el caso anterior.
+¾Qué sucedería si eligiéramos δ = ? Tratemos de comprobarlo eligiendo 0,11
+para ambas. Entonces, decimos que si 0 &lt; |x − 3| &lt; 0, 11 se debe cumplir que
+|f (x)−11| &lt; 0,11. Si elegimos x = 3, 1 las siguientes dos desigualdades se cumplen:
+0 &lt; |3,1 − 3| = 0,1 &lt; 0, 11, por lo tanto, el valor de x pertenece al entorno reducido
+del valor 3. Cuando hacemos los cálculos en en la segunda parte de la proposición:
+|f (x) − L| = |2x &#43; 5 − 11| = |2 · 3, 1 &#43; 5 − 11| = |6, 2 − 6| = |0, 2| = 0, 2
+que no es menor que 0, 11. Entonces, ¾cómo se halla el valor de δ? Se busca al
+revés: partiendo del nal de la proposición, así δ queda dependiendo de . Por lo
+tanto, planteamos:
+|f (x) − L| = |2x &#43; 5 − 11| = |2x − 6| &lt; 
+En la expresión debemos buscar que nos aparezca |x − 3| para poder relacionarlo
+con la expresión del antecedente y conseguir acotarla. Si sacamos factor común 2
+y aplicamos propiedades del módulo, nos queda:
+|2x − 6| = |2(x − 3)| = |2||x − 3| = 2|x − 3| &lt; ε
+Pero 0 &lt; |x − 3| &lt; δ, entonces 2|x − 3| &lt; 2δ ≤ . De esta forma, podemos tomar
+δ ≤ /2 y así reconstruir la proposición entera. En el gráco 2.10 vemos que la
+longitud del segmento  es el doble de la longitud del segmento δ.
+11
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Figura 2.10: La función lineal f (x) = 2x &#43; 5, vemos que la longitud de δ es la
+mitad de 
+Ejemplo 2.9. Si queremos demostrar, formalmente, que el límite del ejemplo 2.1
+es válido debemos probar que se cumple la proposición de la denición. Para esto
+necesitamos encontrar las restricciones del valor delta como hicimos en el caso
+anterior. Decimos que:
+lim
+x→2x2 = 4,
+equivale a decir que: si 0 &lt; |x − 2| &lt; δ entonces |x2 − 4| &lt; ε.
+Al igual que antes, empezaremos por la última condición así delta nos queda
+en función de épsilon. Debemos buscar que nos aparezca la expresión x − a, dentro
+de la expresión f (x) − L, para poder acotarla. De esta forma,
+|x2 − 4| = |(x &#43; 2)(x − 2)| &lt; ε
+Por propiedad de módulos
+|(x &#43; 2)(x − 2)| = |x &#43; 2||x − 2| &lt; ε (2.1)
+Pero sabemos que 0 &lt; |x − 2| &lt; δ, ya que es nuestra hipótesis. El problema lo
+tenemos con el x &#43; 2 porque no hay una restricción para esta expresión, por lo que
+a priori no podríamos encontrar alguna relación entre δ y ε. Pero si pensamos que
+x estará cerca del valor 2, podríamos pedir que x no se aleje en más de una unidad
+del valor 2 (si hubiéramos elegido 2, 3 o 20 unidades no cambia demasiado). Que
+diste del 2 a lo sumo en una unidad signica que x estará en el intervalo (1, 3)−{2}.
+Por lo tanto, podemos plantear que: 3 ≤ |x &#43; 2| ≤ 5.
+Ahora volvemos a la desigualdad 2.1, como buscamos acotar, pondremos el
+valor máximo:
+|x &#43; 2||x − 2| &lt; 5δ ≤ ε
+12
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Nota: el 5 surge del factor |x &#43; 2|, y el δ por |x − 2|.
+Por lo tanto, pedimos que 5δ ≤ ε, es decir δ ≤ ε/5. Como vemos, cuando
+épsilon es muy chico, también lo será delta.
+Hagamos una comprobación con valores concretos, por ejemplo si queremos que
+el resultado diera en menos de 1 de su límite, estamos pidiendo ε = 1, entonces,
+δ ≤ 1/5 = 0, 2. Elegimos este valor δ = 0, 2. Quiere decir que x tiene que valer más
+de 1, 8 y menos de 2, 2, pero no 2. Veamos qué sucede con x = 2, 1 que cumple lo
+pedido. Entonces, armamos la expresión:
+|x − 2| = |2, 1 − 2| = |0, 1| &lt; 0,2
+que cumple que es menor o igual que 1/5. Ahora miremos si cumple la otra
+expresión:
+|x2 − 4| = |2, 12 − 4| = 0, 41 &lt; ε = 1
+que también cumple.
+Lo que acabamos de hacer en el ejemplo es solo una comprobación. La demos-
+tración general de que lim
+x→2x2 = 4 se debe hacer para todo x y surge de reconstruir
+la proposición de la siguiente forma:
+Demostración. Para cada ε &gt; 0 existe δ tal que 0 &lt; δ ≤ ε/5, (δ ≤ ε/5 hallado
+previamente) verica que si 0 &lt; |x − 2| &lt; δ, entonces
+|f (x) − L| = |x2 − 4| = |x − 2||x &#43; 2|
+y, dado que pedimos que 3 &lt; |x &#43; 2| &lt; 5:
+|x − 2||x &#43; 2| &lt; 5δ ≤ 5ε/5 = ε
+De esta forma queda demostrado que el límite de la función cuando x tiende a 2,
+es 4.
+Ejemplo 2.10. Vamos a probar que el límite de una función constante: f (x) = k,
+es siempre k. Es decir, queremos probar que lim
+x→ak = k para todo k real y para
+todo valor de a.
+Nota: si bien esta función es más sencilla que las que vimos en
+los dos ejemplos anteriores, en este caso estamos probando un
+límite para cualquier valor de a y no para un valor puntual.
+En este caso δ es cualquier número positivo, porque para cualquier ε positivo
+y para cualquier δ positivo resulta que para todo x ∈ Dom(f ) se verica que si
+0 &lt; |x − a| &lt; δ entonces, |f (x) − k| = |k − k| = 0 &lt; ε.
+13
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Ejemplo 2.11. ¾Qué sucede si queremos aplicar la denición a una función que
+no tiene límite? Por ejemplo, lim
+x→0
+1
+x . Sabemos que no tiene límite, pero supongamos
+que decimos que el límite es 0 (podríamos elegir 1, 5 o cualquier número). Por lo
+tanto,
+si 0 &lt; |x − 0| = |x| &lt; δ, entonces |1/x − 0| = |1/x| &lt; ε.
+Si dividimos todo por δ|x|, como es un número positivo, queda:
+0 &lt; |x|
+|x|δ &lt; δ
+|x|δ
+0 &lt; 1
+δ &lt; 1
+|x| = |1/x| &lt; ε.
+De donde decimos que 0 &lt; 1
+δ &lt; ε. En consecuencia, 1
+ε &lt; δ. Lo que signica que,
+cuanto más chico sea el épsilon que uno elija, más grande deberá ser el delta, por
+lo tanto el límite propuesto no es válido. Por ejemplo, elegimos ε = 0, 1. Entonces,
+δ tiene que ser más grande que 1/0, 1 = 10. Elegimos δ = 11. Estamos diciendo
+que, 0 &lt; |x| &lt; δ = 11
+Ahora supongamos que x vale 5, como 5 es menor que 11, cumple la primera
+condición. Pero 1/5 = 0, 2 no es menor a 0, 1, que es el valor de ε, por lo tanto, la
+proposición es falsa, lo que quiere decir que el límite no vale cero.
+Acabamos de probar que el lim
+x→0
+1
+x es distinto de cero, pero habría que probar
+que tampoco se cumple con ningún otro número, es decir, deberíamos plantear un
+valor de L genérico y trabajar con eso. Lo haremos con una función similar luego
+de expresar la siguiente denición.
+Denición 2.2. Decimos que lim
+x→af (x) = &#43;∞ si existe un número M , arbitraria-
+mente grande, tal que para cierto δ, que depende de M , se cumple que f (x) &gt; M
+siempre que 0 &lt; |x − a| &lt; δ.
+Pensándolo con respecto a entornos, esta denición nos dice que cuando x está
+muy cerca del valor a, es decir, cuando pertenece a un entorno de dicho valor, los
+valores de la función son mayores que cierto valor M , es decir, f (x)  (M, &#43;∞).
+Ejemplo 2.12. Sea f (x) = 1/x2, queremos vericar que lim
+x→0f (x) = &#43;∞. Si
+tomamos un valor de M = 10000, alcanzará con que δ = 1/100, dado que si
+se cumple 0 &lt; |x − 0| &lt; 100, entonces, f (x) &gt; 1/(1/100)2 = 10000. Esto lo
+podemos generalizar para cualquier valor de M , haciendo que δ = √M .
+La denición anterior la podemos plantear también con innito negativo: de-
+cimos que lim
+x→af (x) = −∞ si existe un número M , arbitrariamente grande, tal
+14
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+que para cierto δ, que depende de M , se cumple que f (x) &lt; −M siempre que
+0 &lt; |x − a| &lt; δ.
+En el ejemplo 2.11 tenemos que cuando x se acerca al valor 0 por el lado derecho
+el límite nos da innito positivo, en cambio, cuando lo hace por el lado izquierdo,
+cumple con la denición de innito negativo. Esto nos lleva a referirnos a límites
+laterales que lo haremos más adelante">
+    <meta name="generator" content="Hugo 0.146.7">
+    
+    
+    
+      <meta name="robots" content="noindex, nofollow">
+    
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.css" >
+
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="http://localhost:1313/public/school/analisis-matem%C3%A1tico/limites/">
+    
+
+    <meta property="og:url" content="http://localhost:1313/public/school/analisis-matem%C3%A1tico/limites/">
+  <meta property="og:site_name" content="darthpedro notes">
+  <meta property="og:title" content="darthpedro notes">
+  <meta property="og:description" content="Límite en un punto: denición formal Después de haber visto distintos ejemplos, estamos preparados para la deni- ción formal de límite en un punto. 8 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.8: Análisis del límite de una función partida. Denición 2.1. Sea una función f y un intervalo abierto I que incluye al valor a, si f está denida en I o en I − {a}, armamos que: lim x→af (x) = L sí y solo sí, para todo ε &gt; 0 existe algún δ &gt; 0 tal que, |f (x) − L| &lt; ε siempre que 0 &lt; |x − a| &lt; δ Comprender esta denición no es fácil. En lenguaje coloquial signica lo si- guiente: Tanto ε (épsilon) como δ (delta) son números reales positivos. La idea es que ambos sean muy pequeños, tanto como uno quiera. La denición nos dice que siempre que x esté muy cerca del valor de a (en símbolos 0 &lt; |x − a| &lt; δ), es decir, si la distancia que hay de algún valor de x al valor a es muy pequeña entonces los valores de la función estarán muy cerca de L, es decir, la distancia entre los valores de la función y su límite L será muy chica. En símbolos |f (x) − L| &lt; ε. Algunos comentarios: El valor a puede o no pertenecer al dominio de f . Los valores de x estarán muy cerca de a, esto se restringe al pedir que el valor absoluto de la resta sea menor que delta, el cual dijimos que es un número positivo pequeño; pero x nunca valdrá a. Si así fuera, la resta nos daría 0, sin embargo pedimos que sea mayor estricto que 0. La restricción anterior no se pide en la expresión |f (x) − L| &lt; ε ya que f (x) podría valer L. 9 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Otra forma de plantear la denición de límite Podemos pensar la denición de límite de otra manera, pero para eso antes necesitamos denir dos conceptos muy parecidos. Entorno de un punto. Cualquier intervalo abierto que contenga a un punto a como su punto medio será un entorno de a, y se escribirá E(a). La distancia del valor a hasta el borde del intervalo será el radio al que llamaremos r, por lo que dicho intervalo será (a − r, a &#43; r). Esto quiere decir que el intervalo estará formado por todos los valores reales x que cumplen a − r &lt; x &lt; a &#43; r. De acuerdo a esto, la expresión |f (x) − L| &lt; ε podemos pensarla como un entorno del valor L con radio ε, dado que −ε &lt; f (x) − L &lt; ε, por denición de módulo y despejando convenientemente, queda f (x) − ε &lt; L &lt; f (x) &#43; ε Entorno reducido. Un entorno reducido de un punto es un entorno que no incluye al punto en cuestión. Su notación es E∗(a). Es decir, si r es el radio de un entorno reducido, el intervalo será (a − r, a &#43; r) − {a} . Por lo tanto, la expresión 0 &lt; |x − a| &lt; δ la podemos pensar como un entorno reducido del punto a. Con los dos conceptos anteriores armamos que lim x→af (x) = L si para todo E(L) existe cierto E∗(a) tal que f (x)  E(L) siempre que x  E∗(a). La idea es la misma que explicamos anteriormente: los valores de la función estarán cerca de su límite, es decir, pertenecerán al entorno de L cuando los valores de x estén cercanos al valor a, o sea, pertenecerán al otro entorno. Ejemplo 2.7. Comencemos aplicando la denición a un ejemplo bien sencillo. f (x) = x Queremos ver qué sucede cuando x tiende a, por ejemplo, 3. Si calculamos el límite grácamente, podremos ver que el límite da 3. Sin embargo, buscamos aplicar la denición. Entonces, si 0 &lt; |x − a| &lt; δ, debería suceder que |f (x) − L| &lt; ε. Como a y L valen 3, nos queda: si 0 &lt; |x − 3| &lt; δ entonces, deber´ıa suceder que |x − 3| &lt; ε. Vemos que el módulo que está al principio de la proposición tiene la misma ex- presión que el módulo que está al nal, por lo que la proposición anterior será verdadera siempre y cuando δ ≤ ε. Por lo tanto, si alguien elige, por ejemplo, 10 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.9: Límite de la función identidad: a cierto δ le corresponde un mismo ε ε = 0,1 alcanzará con elegir δ = 0,1 o cualquier otro número positivo menor para que cumpla lo pedido. Y si se elige ε = 0,001, nos alcanzará con elegir δ = 0,001 o cualquier otro número menor. Ejemplo 2.8. Si la función fuera f (x) = 2x &#43; 5 y quisiéramos demostrar que el límite cuando x tiende a 3 es 11, no es tan sencillo como en el caso anterior. ¾Qué sucedería si eligiéramos δ = ? Tratemos de comprobarlo eligiendo 0,11 para ambas. Entonces, decimos que si 0 &lt; |x − 3| &lt; 0, 11 se debe cumplir que |f (x)−11| &lt; 0,11. Si elegimos x = 3, 1 las siguientes dos desigualdades se cumplen: 0 &lt; |3,1 − 3| = 0,1 &lt; 0, 11, por lo tanto, el valor de x pertenece al entorno reducido del valor 3. Cuando hacemos los cálculos en en la segunda parte de la proposición: |f (x) − L| = |2x &#43; 5 − 11| = |2 · 3, 1 &#43; 5 − 11| = |6, 2 − 6| = |0, 2| = 0, 2 que no es menor que 0, 11. Entonces, ¾cómo se halla el valor de δ? Se busca al revés: partiendo del nal de la proposición, así δ queda dependiendo de . Por lo tanto, planteamos: |f (x) − L| = |2x &#43; 5 − 11| = |2x − 6| &lt;  En la expresión debemos buscar que nos aparezca |x − 3| para poder relacionarlo con la expresión del antecedente y conseguir acotarla. Si sacamos factor común 2 y aplicamos propiedades del módulo, nos queda: |2x − 6| = |2(x − 3)| = |2||x − 3| = 2|x − 3| &lt; ε Pero 0 &lt; |x − 3| &lt; δ, entonces 2|x − 3| &lt; 2δ ≤ . De esta forma, podemos tomar δ ≤ /2 y así reconstruir la proposición entera. En el gráco 2.10 vemos que la longitud del segmento  es el doble de la longitud del segmento δ. 11 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.10: La función lineal f (x) = 2x &#43; 5, vemos que la longitud de δ es la mitad de  Ejemplo 2.9. Si queremos demostrar, formalmente, que el límite del ejemplo 2.1 es válido debemos probar que se cumple la proposición de la denición. Para esto necesitamos encontrar las restricciones del valor delta como hicimos en el caso anterior. Decimos que: lim x→2x2 = 4, equivale a decir que: si 0 &lt; |x − 2| &lt; δ entonces |x2 − 4| &lt; ε. Al igual que antes, empezaremos por la última condición así delta nos queda en función de épsilon. Debemos buscar que nos aparezca la expresión x − a, dentro de la expresión f (x) − L, para poder acotarla. De esta forma, |x2 − 4| = |(x &#43; 2)(x − 2)| &lt; ε Por propiedad de módulos |(x &#43; 2)(x − 2)| = |x &#43; 2||x − 2| &lt; ε (2.1) Pero sabemos que 0 &lt; |x − 2| &lt; δ, ya que es nuestra hipótesis. El problema lo tenemos con el x &#43; 2 porque no hay una restricción para esta expresión, por lo que a priori no podríamos encontrar alguna relación entre δ y ε. Pero si pensamos que x estará cerca del valor 2, podríamos pedir que x no se aleje en más de una unidad del valor 2 (si hubiéramos elegido 2, 3 o 20 unidades no cambia demasiado). Que diste del 2 a lo sumo en una unidad signica que x estará en el intervalo (1, 3)−{2}. Por lo tanto, podemos plantear que: 3 ≤ |x &#43; 2| ≤ 5. Ahora volvemos a la desigualdad 2.1, como buscamos acotar, pondremos el valor máximo: |x &#43; 2||x − 2| &lt; 5δ ≤ ε 12 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Nota: el 5 surge del factor |x &#43; 2|, y el δ por |x − 2|. Por lo tanto, pedimos que 5δ ≤ ε, es decir δ ≤ ε/5. Como vemos, cuando épsilon es muy chico, también lo será delta. Hagamos una comprobación con valores concretos, por ejemplo si queremos que el resultado diera en menos de 1 de su límite, estamos pidiendo ε = 1, entonces, δ ≤ 1/5 = 0, 2. Elegimos este valor δ = 0, 2. Quiere decir que x tiene que valer más de 1, 8 y menos de 2, 2, pero no 2. Veamos qué sucede con x = 2, 1 que cumple lo pedido. Entonces, armamos la expresión: |x − 2| = |2, 1 − 2| = |0, 1| &lt; 0,2 que cumple que es menor o igual que 1/5. Ahora miremos si cumple la otra expresión: |x2 − 4| = |2, 12 − 4| = 0, 41 &lt; ε = 1 que también cumple. Lo que acabamos de hacer en el ejemplo es solo una comprobación. La demos- tración general de que lim x→2x2 = 4 se debe hacer para todo x y surge de reconstruir la proposición de la siguiente forma: Demostración. Para cada ε &gt; 0 existe δ tal que 0 &lt; δ ≤ ε/5, (δ ≤ ε/5 hallado previamente) verica que si 0 &lt; |x − 2| &lt; δ, entonces |f (x) − L| = |x2 − 4| = |x − 2||x &#43; 2| y, dado que pedimos que 3 &lt; |x &#43; 2| &lt; 5: |x − 2||x &#43; 2| &lt; 5δ ≤ 5ε/5 = ε De esta forma queda demostrado que el límite de la función cuando x tiende a 2, es 4. Ejemplo 2.10. Vamos a probar que el límite de una función constante: f (x) = k, es siempre k. Es decir, queremos probar que lim x→ak = k para todo k real y para todo valor de a. Nota: si bien esta función es más sencilla que las que vimos en los dos ejemplos anteriores, en este caso estamos probando un límite para cualquier valor de a y no para un valor puntual. En este caso δ es cualquier número positivo, porque para cualquier ε positivo y para cualquier δ positivo resulta que para todo x ∈ Dom(f ) se verica que si 0 &lt; |x − a| &lt; δ entonces, |f (x) − k| = |k − k| = 0 &lt; ε. 13 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Ejemplo 2.11. ¾Qué sucede si queremos aplicar la denición a una función que no tiene límite? Por ejemplo, lim x→0 1 x . Sabemos que no tiene límite, pero supongamos que decimos que el límite es 0 (podríamos elegir 1, 5 o cualquier número). Por lo tanto, si 0 &lt; |x − 0| = |x| &lt; δ, entonces |1/x − 0| = |1/x| &lt; ε. Si dividimos todo por δ|x|, como es un número positivo, queda: 0 &lt; |x| |x|δ &lt; δ |x|δ 0 &lt; 1 δ &lt; 1 |x| = |1/x| &lt; ε. De donde decimos que 0 &lt; 1 δ &lt; ε. En consecuencia, 1 ε &lt; δ. Lo que signica que, cuanto más chico sea el épsilon que uno elija, más grande deberá ser el delta, por lo tanto el límite propuesto no es válido. Por ejemplo, elegimos ε = 0, 1. Entonces, δ tiene que ser más grande que 1/0, 1 = 10. Elegimos δ = 11. Estamos diciendo que, 0 &lt; |x| &lt; δ = 11 Ahora supongamos que x vale 5, como 5 es menor que 11, cumple la primera condición. Pero 1/5 = 0, 2 no es menor a 0, 1, que es el valor de ε, por lo tanto, la proposición es falsa, lo que quiere decir que el límite no vale cero. Acabamos de probar que el lim x→0 1 x es distinto de cero, pero habría que probar que tampoco se cumple con ningún otro número, es decir, deberíamos plantear un valor de L genérico y trabajar con eso. Lo haremos con una función similar luego de expresar la siguiente denición. Denición 2.2. Decimos que lim x→af (x) = &#43;∞ si existe un número M , arbitraria- mente grande, tal que para cierto δ, que depende de M , se cumple que f (x) &gt; M siempre que 0 &lt; |x − a| &lt; δ. Pensándolo con respecto a entornos, esta denición nos dice que cuando x está muy cerca del valor a, es decir, cuando pertenece a un entorno de dicho valor, los valores de la función son mayores que cierto valor M , es decir, f (x)  (M, &#43;∞). Ejemplo 2.12. Sea f (x) = 1/x2, queremos vericar que lim x→0f (x) = &#43;∞. Si tomamos un valor de M = 10000, alcanzará con que δ = 1/100, dado que si se cumple 0 &lt; |x − 0| &lt; 100, entonces, f (x) &gt; 1/(1/100)2 = 10000. Esto lo podemos generalizar para cualquier valor de M , haciendo que δ = √M . La denición anterior la podemos plantear también con innito negativo: de- cimos que lim x→af (x) = −∞ si existe un número M , arbitrariamente grande, tal 14 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) que para cierto δ, que depende de M , se cumple que f (x) &lt; −M siempre que 0 &lt; |x − a| &lt; δ. En el ejemplo 2.11 tenemos que cuando x se acerca al valor 0 por el lado derecho el límite nos da innito positivo, en cambio, cuando lo hace por el lado izquierdo, cumple con la denición de innito negativo. Esto nos lleva a referirnos a límites laterales que lo haremos más adelante">
+  <meta property="og:locale" content="en_us">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="public">
+
+  <meta itemprop="name" content="darthpedro notes">
+  <meta itemprop="description" content="Límite en un punto: denición formal Después de haber visto distintos ejemplos, estamos preparados para la deni- ción formal de límite en un punto. 8 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.8: Análisis del límite de una función partida. Denición 2.1. Sea una función f y un intervalo abierto I que incluye al valor a, si f está denida en I o en I − {a}, armamos que: lim x→af (x) = L sí y solo sí, para todo ε &gt; 0 existe algún δ &gt; 0 tal que, |f (x) − L| &lt; ε siempre que 0 &lt; |x − a| &lt; δ Comprender esta denición no es fácil. En lenguaje coloquial signica lo si- guiente: Tanto ε (épsilon) como δ (delta) son números reales positivos. La idea es que ambos sean muy pequeños, tanto como uno quiera. La denición nos dice que siempre que x esté muy cerca del valor de a (en símbolos 0 &lt; |x − a| &lt; δ), es decir, si la distancia que hay de algún valor de x al valor a es muy pequeña entonces los valores de la función estarán muy cerca de L, es decir, la distancia entre los valores de la función y su límite L será muy chica. En símbolos |f (x) − L| &lt; ε. Algunos comentarios: El valor a puede o no pertenecer al dominio de f . Los valores de x estarán muy cerca de a, esto se restringe al pedir que el valor absoluto de la resta sea menor que delta, el cual dijimos que es un número positivo pequeño; pero x nunca valdrá a. Si así fuera, la resta nos daría 0, sin embargo pedimos que sea mayor estricto que 0. La restricción anterior no se pide en la expresión |f (x) − L| &lt; ε ya que f (x) podría valer L. 9 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Otra forma de plantear la denición de límite Podemos pensar la denición de límite de otra manera, pero para eso antes necesitamos denir dos conceptos muy parecidos. Entorno de un punto. Cualquier intervalo abierto que contenga a un punto a como su punto medio será un entorno de a, y se escribirá E(a). La distancia del valor a hasta el borde del intervalo será el radio al que llamaremos r, por lo que dicho intervalo será (a − r, a &#43; r). Esto quiere decir que el intervalo estará formado por todos los valores reales x que cumplen a − r &lt; x &lt; a &#43; r. De acuerdo a esto, la expresión |f (x) − L| &lt; ε podemos pensarla como un entorno del valor L con radio ε, dado que −ε &lt; f (x) − L &lt; ε, por denición de módulo y despejando convenientemente, queda f (x) − ε &lt; L &lt; f (x) &#43; ε Entorno reducido. Un entorno reducido de un punto es un entorno que no incluye al punto en cuestión. Su notación es E∗(a). Es decir, si r es el radio de un entorno reducido, el intervalo será (a − r, a &#43; r) − {a} . Por lo tanto, la expresión 0 &lt; |x − a| &lt; δ la podemos pensar como un entorno reducido del punto a. Con los dos conceptos anteriores armamos que lim x→af (x) = L si para todo E(L) existe cierto E∗(a) tal que f (x)  E(L) siempre que x  E∗(a). La idea es la misma que explicamos anteriormente: los valores de la función estarán cerca de su límite, es decir, pertenecerán al entorno de L cuando los valores de x estén cercanos al valor a, o sea, pertenecerán al otro entorno. Ejemplo 2.7. Comencemos aplicando la denición a un ejemplo bien sencillo. f (x) = x Queremos ver qué sucede cuando x tiende a, por ejemplo, 3. Si calculamos el límite grácamente, podremos ver que el límite da 3. Sin embargo, buscamos aplicar la denición. Entonces, si 0 &lt; |x − a| &lt; δ, debería suceder que |f (x) − L| &lt; ε. Como a y L valen 3, nos queda: si 0 &lt; |x − 3| &lt; δ entonces, deber´ıa suceder que |x − 3| &lt; ε. Vemos que el módulo que está al principio de la proposición tiene la misma ex- presión que el módulo que está al nal, por lo que la proposición anterior será verdadera siempre y cuando δ ≤ ε. Por lo tanto, si alguien elige, por ejemplo, 10 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.9: Límite de la función identidad: a cierto δ le corresponde un mismo ε ε = 0,1 alcanzará con elegir δ = 0,1 o cualquier otro número positivo menor para que cumpla lo pedido. Y si se elige ε = 0,001, nos alcanzará con elegir δ = 0,001 o cualquier otro número menor. Ejemplo 2.8. Si la función fuera f (x) = 2x &#43; 5 y quisiéramos demostrar que el límite cuando x tiende a 3 es 11, no es tan sencillo como en el caso anterior. ¾Qué sucedería si eligiéramos δ = ? Tratemos de comprobarlo eligiendo 0,11 para ambas. Entonces, decimos que si 0 &lt; |x − 3| &lt; 0, 11 se debe cumplir que |f (x)−11| &lt; 0,11. Si elegimos x = 3, 1 las siguientes dos desigualdades se cumplen: 0 &lt; |3,1 − 3| = 0,1 &lt; 0, 11, por lo tanto, el valor de x pertenece al entorno reducido del valor 3. Cuando hacemos los cálculos en en la segunda parte de la proposición: |f (x) − L| = |2x &#43; 5 − 11| = |2 · 3, 1 &#43; 5 − 11| = |6, 2 − 6| = |0, 2| = 0, 2 que no es menor que 0, 11. Entonces, ¾cómo se halla el valor de δ? Se busca al revés: partiendo del nal de la proposición, así δ queda dependiendo de . Por lo tanto, planteamos: |f (x) − L| = |2x &#43; 5 − 11| = |2x − 6| &lt;  En la expresión debemos buscar que nos aparezca |x − 3| para poder relacionarlo con la expresión del antecedente y conseguir acotarla. Si sacamos factor común 2 y aplicamos propiedades del módulo, nos queda: |2x − 6| = |2(x − 3)| = |2||x − 3| = 2|x − 3| &lt; ε Pero 0 &lt; |x − 3| &lt; δ, entonces 2|x − 3| &lt; 2δ ≤ . De esta forma, podemos tomar δ ≤ /2 y así reconstruir la proposición entera. En el gráco 2.10 vemos que la longitud del segmento  es el doble de la longitud del segmento δ. 11 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.10: La función lineal f (x) = 2x &#43; 5, vemos que la longitud de δ es la mitad de  Ejemplo 2.9. Si queremos demostrar, formalmente, que el límite del ejemplo 2.1 es válido debemos probar que se cumple la proposición de la denición. Para esto necesitamos encontrar las restricciones del valor delta como hicimos en el caso anterior. Decimos que: lim x→2x2 = 4, equivale a decir que: si 0 &lt; |x − 2| &lt; δ entonces |x2 − 4| &lt; ε. Al igual que antes, empezaremos por la última condición así delta nos queda en función de épsilon. Debemos buscar que nos aparezca la expresión x − a, dentro de la expresión f (x) − L, para poder acotarla. De esta forma, |x2 − 4| = |(x &#43; 2)(x − 2)| &lt; ε Por propiedad de módulos |(x &#43; 2)(x − 2)| = |x &#43; 2||x − 2| &lt; ε (2.1) Pero sabemos que 0 &lt; |x − 2| &lt; δ, ya que es nuestra hipótesis. El problema lo tenemos con el x &#43; 2 porque no hay una restricción para esta expresión, por lo que a priori no podríamos encontrar alguna relación entre δ y ε. Pero si pensamos que x estará cerca del valor 2, podríamos pedir que x no se aleje en más de una unidad del valor 2 (si hubiéramos elegido 2, 3 o 20 unidades no cambia demasiado). Que diste del 2 a lo sumo en una unidad signica que x estará en el intervalo (1, 3)−{2}. Por lo tanto, podemos plantear que: 3 ≤ |x &#43; 2| ≤ 5. Ahora volvemos a la desigualdad 2.1, como buscamos acotar, pondremos el valor máximo: |x &#43; 2||x − 2| &lt; 5δ ≤ ε 12 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Nota: el 5 surge del factor |x &#43; 2|, y el δ por |x − 2|. Por lo tanto, pedimos que 5δ ≤ ε, es decir δ ≤ ε/5. Como vemos, cuando épsilon es muy chico, también lo será delta. Hagamos una comprobación con valores concretos, por ejemplo si queremos que el resultado diera en menos de 1 de su límite, estamos pidiendo ε = 1, entonces, δ ≤ 1/5 = 0, 2. Elegimos este valor δ = 0, 2. Quiere decir que x tiene que valer más de 1, 8 y menos de 2, 2, pero no 2. Veamos qué sucede con x = 2, 1 que cumple lo pedido. Entonces, armamos la expresión: |x − 2| = |2, 1 − 2| = |0, 1| &lt; 0,2 que cumple que es menor o igual que 1/5. Ahora miremos si cumple la otra expresión: |x2 − 4| = |2, 12 − 4| = 0, 41 &lt; ε = 1 que también cumple. Lo que acabamos de hacer en el ejemplo es solo una comprobación. La demos- tración general de que lim x→2x2 = 4 se debe hacer para todo x y surge de reconstruir la proposición de la siguiente forma: Demostración. Para cada ε &gt; 0 existe δ tal que 0 &lt; δ ≤ ε/5, (δ ≤ ε/5 hallado previamente) verica que si 0 &lt; |x − 2| &lt; δ, entonces |f (x) − L| = |x2 − 4| = |x − 2||x &#43; 2| y, dado que pedimos que 3 &lt; |x &#43; 2| &lt; 5: |x − 2||x &#43; 2| &lt; 5δ ≤ 5ε/5 = ε De esta forma queda demostrado que el límite de la función cuando x tiende a 2, es 4. Ejemplo 2.10. Vamos a probar que el límite de una función constante: f (x) = k, es siempre k. Es decir, queremos probar que lim x→ak = k para todo k real y para todo valor de a. Nota: si bien esta función es más sencilla que las que vimos en los dos ejemplos anteriores, en este caso estamos probando un límite para cualquier valor de a y no para un valor puntual. En este caso δ es cualquier número positivo, porque para cualquier ε positivo y para cualquier δ positivo resulta que para todo x ∈ Dom(f ) se verica que si 0 &lt; |x − a| &lt; δ entonces, |f (x) − k| = |k − k| = 0 &lt; ε. 13 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Ejemplo 2.11. ¾Qué sucede si queremos aplicar la denición a una función que no tiene límite? Por ejemplo, lim x→0 1 x . Sabemos que no tiene límite, pero supongamos que decimos que el límite es 0 (podríamos elegir 1, 5 o cualquier número). Por lo tanto, si 0 &lt; |x − 0| = |x| &lt; δ, entonces |1/x − 0| = |1/x| &lt; ε. Si dividimos todo por δ|x|, como es un número positivo, queda: 0 &lt; |x| |x|δ &lt; δ |x|δ 0 &lt; 1 δ &lt; 1 |x| = |1/x| &lt; ε. De donde decimos que 0 &lt; 1 δ &lt; ε. En consecuencia, 1 ε &lt; δ. Lo que signica que, cuanto más chico sea el épsilon que uno elija, más grande deberá ser el delta, por lo tanto el límite propuesto no es válido. Por ejemplo, elegimos ε = 0, 1. Entonces, δ tiene que ser más grande que 1/0, 1 = 10. Elegimos δ = 11. Estamos diciendo que, 0 &lt; |x| &lt; δ = 11 Ahora supongamos que x vale 5, como 5 es menor que 11, cumple la primera condición. Pero 1/5 = 0, 2 no es menor a 0, 1, que es el valor de ε, por lo tanto, la proposición es falsa, lo que quiere decir que el límite no vale cero. Acabamos de probar que el lim x→0 1 x es distinto de cero, pero habría que probar que tampoco se cumple con ningún otro número, es decir, deberíamos plantear un valor de L genérico y trabajar con eso. Lo haremos con una función similar luego de expresar la siguiente denición. Denición 2.2. Decimos que lim x→af (x) = &#43;∞ si existe un número M , arbitraria- mente grande, tal que para cierto δ, que depende de M , se cumple que f (x) &gt; M siempre que 0 &lt; |x − a| &lt; δ. Pensándolo con respecto a entornos, esta denición nos dice que cuando x está muy cerca del valor a, es decir, cuando pertenece a un entorno de dicho valor, los valores de la función son mayores que cierto valor M , es decir, f (x)  (M, &#43;∞). Ejemplo 2.12. Sea f (x) = 1/x2, queremos vericar que lim x→0f (x) = &#43;∞. Si tomamos un valor de M = 10000, alcanzará con que δ = 1/100, dado que si se cumple 0 &lt; |x − 0| &lt; 100, entonces, f (x) &gt; 1/(1/100)2 = 10000. Esto lo podemos generalizar para cualquier valor de M , haciendo que δ = √M . La denición anterior la podemos plantear también con innito negativo: de- cimos que lim x→af (x) = −∞ si existe un número M , arbitrariamente grande, tal 14 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) que para cierto δ, que depende de M , se cumple que f (x) &lt; −M siempre que 0 &lt; |x − a| &lt; δ. En el ejemplo 2.11 tenemos que cuando x se acerca al valor 0 por el lado derecho el límite nos da innito positivo, en cambio, cuando lo hace por el lado izquierdo, cumple con la denición de innito negativo. Esto nos lleva a referirnos a límites laterales que lo haremos más adelante">
+  <meta itemprop="wordCount" content="2405">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="darthpedro notes">
+  <meta name="twitter:description" content="Límite en un punto: denición formal Después de haber visto distintos ejemplos, estamos preparados para la deni- ción formal de límite en un punto. 8 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.8: Análisis del límite de una función partida. Denición 2.1. Sea una función f y un intervalo abierto I que incluye al valor a, si f está denida en I o en I − {a}, armamos que: lim x→af (x) = L sí y solo sí, para todo ε &gt; 0 existe algún δ &gt; 0 tal que, |f (x) − L| &lt; ε siempre que 0 &lt; |x − a| &lt; δ Comprender esta denición no es fácil. En lenguaje coloquial signica lo si- guiente: Tanto ε (épsilon) como δ (delta) son números reales positivos. La idea es que ambos sean muy pequeños, tanto como uno quiera. La denición nos dice que siempre que x esté muy cerca del valor de a (en símbolos 0 &lt; |x − a| &lt; δ), es decir, si la distancia que hay de algún valor de x al valor a es muy pequeña entonces los valores de la función estarán muy cerca de L, es decir, la distancia entre los valores de la función y su límite L será muy chica. En símbolos |f (x) − L| &lt; ε. Algunos comentarios: El valor a puede o no pertenecer al dominio de f . Los valores de x estarán muy cerca de a, esto se restringe al pedir que el valor absoluto de la resta sea menor que delta, el cual dijimos que es un número positivo pequeño; pero x nunca valdrá a. Si así fuera, la resta nos daría 0, sin embargo pedimos que sea mayor estricto que 0. La restricción anterior no se pide en la expresión |f (x) − L| &lt; ε ya que f (x) podría valer L. 9 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Otra forma de plantear la denición de límite Podemos pensar la denición de límite de otra manera, pero para eso antes necesitamos denir dos conceptos muy parecidos. Entorno de un punto. Cualquier intervalo abierto que contenga a un punto a como su punto medio será un entorno de a, y se escribirá E(a). La distancia del valor a hasta el borde del intervalo será el radio al que llamaremos r, por lo que dicho intervalo será (a − r, a &#43; r). Esto quiere decir que el intervalo estará formado por todos los valores reales x que cumplen a − r &lt; x &lt; a &#43; r. De acuerdo a esto, la expresión |f (x) − L| &lt; ε podemos pensarla como un entorno del valor L con radio ε, dado que −ε &lt; f (x) − L &lt; ε, por denición de módulo y despejando convenientemente, queda f (x) − ε &lt; L &lt; f (x) &#43; ε Entorno reducido. Un entorno reducido de un punto es un entorno que no incluye al punto en cuestión. Su notación es E∗(a). Es decir, si r es el radio de un entorno reducido, el intervalo será (a − r, a &#43; r) − {a} . Por lo tanto, la expresión 0 &lt; |x − a| &lt; δ la podemos pensar como un entorno reducido del punto a. Con los dos conceptos anteriores armamos que lim x→af (x) = L si para todo E(L) existe cierto E∗(a) tal que f (x)  E(L) siempre que x  E∗(a). La idea es la misma que explicamos anteriormente: los valores de la función estarán cerca de su límite, es decir, pertenecerán al entorno de L cuando los valores de x estén cercanos al valor a, o sea, pertenecerán al otro entorno. Ejemplo 2.7. Comencemos aplicando la denición a un ejemplo bien sencillo. f (x) = x Queremos ver qué sucede cuando x tiende a, por ejemplo, 3. Si calculamos el límite grácamente, podremos ver que el límite da 3. Sin embargo, buscamos aplicar la denición. Entonces, si 0 &lt; |x − a| &lt; δ, debería suceder que |f (x) − L| &lt; ε. Como a y L valen 3, nos queda: si 0 &lt; |x − 3| &lt; δ entonces, deber´ıa suceder que |x − 3| &lt; ε. Vemos que el módulo que está al principio de la proposición tiene la misma ex- presión que el módulo que está al nal, por lo que la proposición anterior será verdadera siempre y cuando δ ≤ ε. Por lo tanto, si alguien elige, por ejemplo, 10 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.9: Límite de la función identidad: a cierto δ le corresponde un mismo ε ε = 0,1 alcanzará con elegir δ = 0,1 o cualquier otro número positivo menor para que cumpla lo pedido. Y si se elige ε = 0,001, nos alcanzará con elegir δ = 0,001 o cualquier otro número menor. Ejemplo 2.8. Si la función fuera f (x) = 2x &#43; 5 y quisiéramos demostrar que el límite cuando x tiende a 3 es 11, no es tan sencillo como en el caso anterior. ¾Qué sucedería si eligiéramos δ = ? Tratemos de comprobarlo eligiendo 0,11 para ambas. Entonces, decimos que si 0 &lt; |x − 3| &lt; 0, 11 se debe cumplir que |f (x)−11| &lt; 0,11. Si elegimos x = 3, 1 las siguientes dos desigualdades se cumplen: 0 &lt; |3,1 − 3| = 0,1 &lt; 0, 11, por lo tanto, el valor de x pertenece al entorno reducido del valor 3. Cuando hacemos los cálculos en en la segunda parte de la proposición: |f (x) − L| = |2x &#43; 5 − 11| = |2 · 3, 1 &#43; 5 − 11| = |6, 2 − 6| = |0, 2| = 0, 2 que no es menor que 0, 11. Entonces, ¾cómo se halla el valor de δ? Se busca al revés: partiendo del nal de la proposición, así δ queda dependiendo de . Por lo tanto, planteamos: |f (x) − L| = |2x &#43; 5 − 11| = |2x − 6| &lt;  En la expresión debemos buscar que nos aparezca |x − 3| para poder relacionarlo con la expresión del antecedente y conseguir acotarla. Si sacamos factor común 2 y aplicamos propiedades del módulo, nos queda: |2x − 6| = |2(x − 3)| = |2||x − 3| = 2|x − 3| &lt; ε Pero 0 &lt; |x − 3| &lt; δ, entonces 2|x − 3| &lt; 2δ ≤ . De esta forma, podemos tomar δ ≤ /2 y así reconstruir la proposición entera. En el gráco 2.10 vemos que la longitud del segmento  es el doble de la longitud del segmento δ. 11 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Figura 2.10: La función lineal f (x) = 2x &#43; 5, vemos que la longitud de δ es la mitad de  Ejemplo 2.9. Si queremos demostrar, formalmente, que el límite del ejemplo 2.1 es válido debemos probar que se cumple la proposición de la denición. Para esto necesitamos encontrar las restricciones del valor delta como hicimos en el caso anterior. Decimos que: lim x→2x2 = 4, equivale a decir que: si 0 &lt; |x − 2| &lt; δ entonces |x2 − 4| &lt; ε. Al igual que antes, empezaremos por la última condición así delta nos queda en función de épsilon. Debemos buscar que nos aparezca la expresión x − a, dentro de la expresión f (x) − L, para poder acotarla. De esta forma, |x2 − 4| = |(x &#43; 2)(x − 2)| &lt; ε Por propiedad de módulos |(x &#43; 2)(x − 2)| = |x &#43; 2||x − 2| &lt; ε (2.1) Pero sabemos que 0 &lt; |x − 2| &lt; δ, ya que es nuestra hipótesis. El problema lo tenemos con el x &#43; 2 porque no hay una restricción para esta expresión, por lo que a priori no podríamos encontrar alguna relación entre δ y ε. Pero si pensamos que x estará cerca del valor 2, podríamos pedir que x no se aleje en más de una unidad del valor 2 (si hubiéramos elegido 2, 3 o 20 unidades no cambia demasiado). Que diste del 2 a lo sumo en una unidad signica que x estará en el intervalo (1, 3)−{2}. Por lo tanto, podemos plantear que: 3 ≤ |x &#43; 2| ≤ 5. Ahora volvemos a la desigualdad 2.1, como buscamos acotar, pondremos el valor máximo: |x &#43; 2||x − 2| &lt; 5δ ≤ ε 12 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Nota: el 5 surge del factor |x &#43; 2|, y el δ por |x − 2|. Por lo tanto, pedimos que 5δ ≤ ε, es decir δ ≤ ε/5. Como vemos, cuando épsilon es muy chico, también lo será delta. Hagamos una comprobación con valores concretos, por ejemplo si queremos que el resultado diera en menos de 1 de su límite, estamos pidiendo ε = 1, entonces, δ ≤ 1/5 = 0, 2. Elegimos este valor δ = 0, 2. Quiere decir que x tiene que valer más de 1, 8 y menos de 2, 2, pero no 2. Veamos qué sucede con x = 2, 1 que cumple lo pedido. Entonces, armamos la expresión: |x − 2| = |2, 1 − 2| = |0, 1| &lt; 0,2 que cumple que es menor o igual que 1/5. Ahora miremos si cumple la otra expresión: |x2 − 4| = |2, 12 − 4| = 0, 41 &lt; ε = 1 que también cumple. Lo que acabamos de hacer en el ejemplo es solo una comprobación. La demos- tración general de que lim x→2x2 = 4 se debe hacer para todo x y surge de reconstruir la proposición de la siguiente forma: Demostración. Para cada ε &gt; 0 existe δ tal que 0 &lt; δ ≤ ε/5, (δ ≤ ε/5 hallado previamente) verica que si 0 &lt; |x − 2| &lt; δ, entonces |f (x) − L| = |x2 − 4| = |x − 2||x &#43; 2| y, dado que pedimos que 3 &lt; |x &#43; 2| &lt; 5: |x − 2||x &#43; 2| &lt; 5δ ≤ 5ε/5 = ε De esta forma queda demostrado que el límite de la función cuando x tiende a 2, es 4. Ejemplo 2.10. Vamos a probar que el límite de una función constante: f (x) = k, es siempre k. Es decir, queremos probar que lim x→ak = k para todo k real y para todo valor de a. Nota: si bien esta función es más sencilla que las que vimos en los dos ejemplos anteriores, en este caso estamos probando un límite para cualquier valor de a y no para un valor puntual. En este caso δ es cualquier número positivo, porque para cualquier ε positivo y para cualquier δ positivo resulta que para todo x ∈ Dom(f ) se verica que si 0 &lt; |x − a| &lt; δ entonces, |f (x) − k| = |k − k| = 0 &lt; ε. 13 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) Ejemplo 2.11. ¾Qué sucede si queremos aplicar la denición a una función que no tiene límite? Por ejemplo, lim x→0 1 x . Sabemos que no tiene límite, pero supongamos que decimos que el límite es 0 (podríamos elegir 1, 5 o cualquier número). Por lo tanto, si 0 &lt; |x − 0| = |x| &lt; δ, entonces |1/x − 0| = |1/x| &lt; ε. Si dividimos todo por δ|x|, como es un número positivo, queda: 0 &lt; |x| |x|δ &lt; δ |x|δ 0 &lt; 1 δ &lt; 1 |x| = |1/x| &lt; ε. De donde decimos que 0 &lt; 1 δ &lt; ε. En consecuencia, 1 ε &lt; δ. Lo que signica que, cuanto más chico sea el épsilon que uno elija, más grande deberá ser el delta, por lo tanto el límite propuesto no es válido. Por ejemplo, elegimos ε = 0, 1. Entonces, δ tiene que ser más grande que 1/0, 1 = 10. Elegimos δ = 11. Estamos diciendo que, 0 &lt; |x| &lt; δ = 11 Ahora supongamos que x vale 5, como 5 es menor que 11, cumple la primera condición. Pero 1/5 = 0, 2 no es menor a 0, 1, que es el valor de ε, por lo tanto, la proposición es falsa, lo que quiere decir que el límite no vale cero. Acabamos de probar que el lim x→0 1 x es distinto de cero, pero habría que probar que tampoco se cumple con ningún otro número, es decir, deberíamos plantear un valor de L genérico y trabajar con eso. Lo haremos con una función similar luego de expresar la siguiente denición. Denición 2.2. Decimos que lim x→af (x) = &#43;∞ si existe un número M , arbitraria- mente grande, tal que para cierto δ, que depende de M , se cumple que f (x) &gt; M siempre que 0 &lt; |x − a| &lt; δ. Pensándolo con respecto a entornos, esta denición nos dice que cuando x está muy cerca del valor a, es decir, cuando pertenece a un entorno de dicho valor, los valores de la función son mayores que cierto valor M , es decir, f (x)  (M, &#43;∞). Ejemplo 2.12. Sea f (x) = 1/x2, queremos vericar que lim x→0f (x) = &#43;∞. Si tomamos un valor de M = 10000, alcanzará con que δ = 1/100, dado que si se cumple 0 &lt; |x − 0| &lt; 100, entonces, f (x) &gt; 1/(1/100)2 = 10000. Esto lo podemos generalizar para cualquier valor de M , haciendo que δ = √M . La denición anterior la podemos plantear también con innito negativo: de- cimos que lim x→af (x) = −∞ si existe un número M , arbitrariamente grande, tal 14 UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales) que para cierto δ, que depende de M , se cumple que f (x) &lt; −M siempre que 0 &lt; |x − a| &lt; δ. En el ejemplo 2.11 tenemos que cuando x se acerca al valor 0 por el lado derecho el límite nos da innito positivo, en cambio, cuando lo hace por el lado izquierdo, cumple con la denición de innito negativo. Esto nos lleva a referirnos a límites laterales que lo haremos más adelante">
+
+	
+  </head><body class="ma0 avenir bg-near-white development">
+
+    
+   
+  
+
+  <header>
+    <div class="bg-black">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        darthpedro notes
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+    </div>
+  </header>
+
+
+
+    <main class="pb7" role="main">
+      
+  
+  
+  <article class="flex-l flex-wrap justify-between mw8 center ph3">
+    <header class="mt4 w-100">
+      <aside class="instapaper_ignoref b helvetica tracked ttu">
+          
+        Publics
+      </aside><div id="sharing" class="mt3 ananke-socials"></div>
+<h1 class="f1 athelas mt3 mb1"></h1>
+      
+      
+      
+
+      
+      
+    </header>
+    <div class="nested-copy-line-height lh-copy serif f4 nested-links mid-gray pr4-l w-two-thirds-l"><p>Límite en un punto: denición formal
+Después de haber visto distintos ejemplos, estamos preparados para la deni-
+ción formal de límite en un punto.
+8
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Figura 2.8: Análisis del límite de una función partida.
+Denición 2.1. Sea una función f y un intervalo abierto I que
+incluye al valor a, si f está denida en I o en I − {a}, armamos
+que: lim
+x→af (x) = L sí y solo sí, para todo ε &gt; 0 existe algún δ &gt; 0
+tal que,
+|f (x) − L| &lt; ε siempre que 0 &lt; |x − a| &lt; δ
+Comprender esta denición no es fácil. En lenguaje coloquial signica lo si-
+guiente:
+Tanto ε (épsilon) como δ (delta) son números reales positivos. La idea es que
+ambos sean muy pequeños, tanto como uno quiera.
+La denición nos dice que siempre que x esté muy cerca del valor de a (en
+símbolos 0 &lt; |x − a| &lt; δ), es decir, si la distancia que hay de algún valor de
+x al valor a es muy pequeña
+entonces los valores de la función estarán muy cerca de L, es decir, la distancia
+entre los valores de la función y su límite L será muy chica. En símbolos
+|f (x) − L| &lt; ε.
+Algunos comentarios:
+El valor a puede o no pertenecer al dominio de f .
+Los valores de x estarán muy cerca de a, esto se restringe al pedir que el valor
+absoluto de la resta sea menor que delta, el cual dijimos que es un número
+positivo pequeño; pero x nunca valdrá a. Si así fuera, la resta nos daría 0,
+sin embargo pedimos que sea mayor estricto que 0.
+La restricción anterior no se pide en la expresión |f (x) − L| &lt; ε ya que f (x)
+podría valer L.
+9
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Otra forma de plantear la denición de límite
+Podemos pensar la denición de límite de otra manera, pero para eso antes
+necesitamos denir dos conceptos muy parecidos.
+Entorno de un punto. Cualquier intervalo abierto que contenga a un punto
+a como su punto medio será un entorno de a, y se escribirá E(a). La distancia
+del valor a hasta el borde del intervalo será el radio al que llamaremos r, por
+lo que dicho intervalo será (a − r, a + r). Esto quiere decir que el intervalo
+estará formado por todos los valores reales x que cumplen a − r &lt; x &lt; a + r.
+De acuerdo a esto, la expresión |f (x) − L| &lt; ε podemos pensarla como un
+entorno del valor L con radio ε, dado que −ε &lt; f (x) − L &lt; ε, por denición
+de módulo y despejando convenientemente, queda
+f (x) − ε &lt; L &lt; f (x) + ε
+Entorno reducido. Un entorno reducido de un punto es un entorno que no
+incluye al punto en cuestión. Su notación es E∗(a). Es decir, si r es el radio
+de un entorno reducido, el intervalo será (a − r, a + r) − {a} . Por lo tanto,
+la expresión 0 &lt; |x − a| &lt; δ la podemos pensar como un entorno reducido
+del punto a.
+Con los dos conceptos anteriores armamos que lim
+x→af (x) = L si para todo E(L)
+existe cierto E∗(a) tal que f (x)  E(L) siempre que x  E∗(a).
+La idea es la misma que explicamos anteriormente: los valores de la función
+estarán cerca de su límite, es decir, pertenecerán al entorno de L cuando los valores
+de x estén cercanos al valor a, o sea, pertenecerán al otro entorno.
+Ejemplo 2.7. Comencemos aplicando la denición a un ejemplo bien sencillo.
+f (x) = x
+Queremos ver qué sucede cuando x tiende a, por ejemplo, 3. Si calculamos el límite
+grácamente, podremos ver que el límite da 3. Sin embargo, buscamos aplicar la
+denición. Entonces, si 0 &lt; |x − a| &lt; δ, debería suceder que |f (x) − L| &lt; ε. Como
+a y L valen 3, nos queda:
+si 0 &lt; |x − 3| &lt; δ entonces, deber´ıa suceder que |x − 3| &lt; ε.
+Vemos que el módulo que está al principio de la proposición tiene la misma ex-
+presión que el módulo que está al nal, por lo que la proposición anterior será
+verdadera siempre y cuando δ ≤ ε. Por lo tanto, si alguien elige, por ejemplo,
+10
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Figura 2.9: Límite de la función identidad: a cierto δ le corresponde un mismo ε
+ε = 0,1 alcanzará con elegir δ = 0,1 o cualquier otro número positivo menor para
+que cumpla lo pedido. Y si se elige ε = 0,001, nos alcanzará con elegir δ = 0,001
+o cualquier otro número menor.
+Ejemplo 2.8. Si la función fuera f (x) = 2x + 5 y quisiéramos demostrar que el
+límite cuando x tiende a 3 es 11, no es tan sencillo como en el caso anterior.
+¾Qué sucedería si eligiéramos δ = ? Tratemos de comprobarlo eligiendo 0,11
+para ambas. Entonces, decimos que si 0 &lt; |x − 3| &lt; 0, 11 se debe cumplir que
+|f (x)−11| &lt; 0,11. Si elegimos x = 3, 1 las siguientes dos desigualdades se cumplen:
+0 &lt; |3,1 − 3| = 0,1 &lt; 0, 11, por lo tanto, el valor de x pertenece al entorno reducido
+del valor 3. Cuando hacemos los cálculos en en la segunda parte de la proposición:
+|f (x) − L| = |2x + 5 − 11| = |2 · 3, 1 + 5 − 11| = |6, 2 − 6| = |0, 2| = 0, 2
+que no es menor que 0, 11. Entonces, ¾cómo se halla el valor de δ? Se busca al
+revés: partiendo del nal de la proposición, así δ queda dependiendo de . Por lo
+tanto, planteamos:
+|f (x) − L| = |2x + 5 − 11| = |2x − 6| &lt; 
+En la expresión debemos buscar que nos aparezca |x − 3| para poder relacionarlo
+con la expresión del antecedente y conseguir acotarla. Si sacamos factor común 2
+y aplicamos propiedades del módulo, nos queda:
+|2x − 6| = |2(x − 3)| = |2||x − 3| = 2|x − 3| &lt; ε
+Pero 0 &lt; |x − 3| &lt; δ, entonces 2|x − 3| &lt; 2δ ≤ . De esta forma, podemos tomar
+δ ≤ /2 y así reconstruir la proposición entera. En el gráco 2.10 vemos que la
+longitud del segmento  es el doble de la longitud del segmento δ.
+11
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Figura 2.10: La función lineal f (x) = 2x + 5, vemos que la longitud de δ es la
+mitad de 
+Ejemplo 2.9. Si queremos demostrar, formalmente, que el límite del ejemplo 2.1
+es válido debemos probar que se cumple la proposición de la denición. Para esto
+necesitamos encontrar las restricciones del valor delta como hicimos en el caso
+anterior. Decimos que:
+lim
+x→2x2 = 4,
+equivale a decir que: si 0 &lt; |x − 2| &lt; δ entonces |x2 − 4| &lt; ε.
+Al igual que antes, empezaremos por la última condición así delta nos queda
+en función de épsilon. Debemos buscar que nos aparezca la expresión x − a, dentro
+de la expresión f (x) − L, para poder acotarla. De esta forma,
+|x2 − 4| = |(x + 2)(x − 2)| &lt; ε
+Por propiedad de módulos
+|(x + 2)(x − 2)| = |x + 2||x − 2| &lt; ε (2.1)
+Pero sabemos que 0 &lt; |x − 2| &lt; δ, ya que es nuestra hipótesis. El problema lo
+tenemos con el x + 2 porque no hay una restricción para esta expresión, por lo que
+a priori no podríamos encontrar alguna relación entre δ y ε. Pero si pensamos que
+x estará cerca del valor 2, podríamos pedir que x no se aleje en más de una unidad
+del valor 2 (si hubiéramos elegido 2, 3 o 20 unidades no cambia demasiado). Que
+diste del 2 a lo sumo en una unidad signica que x estará en el intervalo (1, 3)−{2}.
+Por lo tanto, podemos plantear que: 3 ≤ |x + 2| ≤ 5.
+Ahora volvemos a la desigualdad 2.1, como buscamos acotar, pondremos el
+valor máximo:
+|x + 2||x − 2| &lt; 5δ ≤ ε
+12
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Nota: el 5 surge del factor |x + 2|, y el δ por |x − 2|.
+Por lo tanto, pedimos que 5δ ≤ ε, es decir δ ≤ ε/5. Como vemos, cuando
+épsilon es muy chico, también lo será delta.
+Hagamos una comprobación con valores concretos, por ejemplo si queremos que
+el resultado diera en menos de 1 de su límite, estamos pidiendo ε = 1, entonces,
+δ ≤ 1/5 = 0, 2. Elegimos este valor δ = 0, 2. Quiere decir que x tiene que valer más
+de 1, 8 y menos de 2, 2, pero no 2. Veamos qué sucede con x = 2, 1 que cumple lo
+pedido. Entonces, armamos la expresión:
+|x − 2| = |2, 1 − 2| = |0, 1| &lt; 0,2
+que cumple que es menor o igual que 1/5. Ahora miremos si cumple la otra
+expresión:
+|x2 − 4| = |2, 12 − 4| = 0, 41 &lt; ε = 1
+que también cumple.
+Lo que acabamos de hacer en el ejemplo es solo una comprobación. La demos-
+tración general de que lim
+x→2x2 = 4 se debe hacer para todo x y surge de reconstruir
+la proposición de la siguiente forma:
+Demostración. Para cada ε &gt; 0 existe δ tal que 0 &lt; δ ≤ ε/5, (δ ≤ ε/5 hallado
+previamente) verica que si 0 &lt; |x − 2| &lt; δ, entonces
+|f (x) − L| = |x2 − 4| = |x − 2||x + 2|
+y, dado que pedimos que 3 &lt; |x + 2| &lt; 5:
+|x − 2||x + 2| &lt; 5δ ≤ 5ε/5 = ε
+De esta forma queda demostrado que el límite de la función cuando x tiende a 2,
+es 4.
+Ejemplo 2.10. Vamos a probar que el límite de una función constante: f (x) = k,
+es siempre k. Es decir, queremos probar que lim
+x→ak = k para todo k real y para
+todo valor de a.
+Nota: si bien esta función es más sencilla que las que vimos en
+los dos ejemplos anteriores, en este caso estamos probando un
+límite para cualquier valor de a y no para un valor puntual.
+En este caso δ es cualquier número positivo, porque para cualquier ε positivo
+y para cualquier δ positivo resulta que para todo x ∈ Dom(f ) se verica que si
+0 &lt; |x − a| &lt; δ entonces, |f (x) − k| = |k − k| = 0 &lt; ε.
+13
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+Ejemplo 2.11. ¾Qué sucede si queremos aplicar la denición a una función que
+no tiene límite? Por ejemplo, lim
+x→0
+1
+x . Sabemos que no tiene límite, pero supongamos
+que decimos que el límite es 0 (podríamos elegir 1, 5 o cualquier número). Por lo
+tanto,
+si 0 &lt; |x − 0| = |x| &lt; δ, entonces |1/x − 0| = |1/x| &lt; ε.
+Si dividimos todo por δ|x|, como es un número positivo, queda:
+0 &lt; |x|
+|x|δ &lt; δ
+|x|δ
+0 &lt; 1
+δ &lt; 1
+|x| = |1/x| &lt; ε.
+De donde decimos que 0 &lt; 1
+δ &lt; ε. En consecuencia, 1
+ε &lt; δ. Lo que signica que,
+cuanto más chico sea el épsilon que uno elija, más grande deberá ser el delta, por
+lo tanto el límite propuesto no es válido. Por ejemplo, elegimos ε = 0, 1. Entonces,
+δ tiene que ser más grande que 1/0, 1 = 10. Elegimos δ = 11. Estamos diciendo
+que, 0 &lt; |x| &lt; δ = 11
+Ahora supongamos que x vale 5, como 5 es menor que 11, cumple la primera
+condición. Pero 1/5 = 0, 2 no es menor a 0, 1, que es el valor de ε, por lo tanto, la
+proposición es falsa, lo que quiere decir que el límite no vale cero.
+Acabamos de probar que el lim
+x→0
+1
+x es distinto de cero, pero habría que probar
+que tampoco se cumple con ningún otro número, es decir, deberíamos plantear un
+valor de L genérico y trabajar con eso. Lo haremos con una función similar luego
+de expresar la siguiente denición.
+Denición 2.2. Decimos que lim
+x→af (x) = +∞ si existe un número M , arbitraria-
+mente grande, tal que para cierto δ, que depende de M , se cumple que f (x) &gt; M
+siempre que 0 &lt; |x − a| &lt; δ.
+Pensándolo con respecto a entornos, esta denición nos dice que cuando x está
+muy cerca del valor a, es decir, cuando pertenece a un entorno de dicho valor, los
+valores de la función son mayores que cierto valor M , es decir, f (x)  (M, +∞).
+Ejemplo 2.12. Sea f (x) = 1/x2, queremos vericar que lim
+x→0f (x) = +∞. Si
+tomamos un valor de M = 10000, alcanzará con que δ = 1/100, dado que si
+se cumple 0 &lt; |x − 0| &lt; 100, entonces, f (x) &gt; 1/(1/100)2 = 10000. Esto lo
+podemos generalizar para cualquier valor de M , haciendo que δ = √M .
+La denición anterior la podemos plantear también con innito negativo: de-
+cimos que lim
+x→af (x) = −∞ si existe un número M , arbitrariamente grande, tal
+14
+UBA XXI Análisis Matemático A (para Ingeniería y Ciencias Exactas y Naturales)
+que para cierto δ, que depende de M , se cumple que f (x) &lt; −M siempre que
+0 &lt; |x − a| &lt; δ.
+En el ejemplo 2.11 tenemos que cuando x se acerca al valor 0 por el lado derecho
+el límite nos da innito positivo, en cambio, cuando lo hace por el lado izquierdo,
+cumple con la denición de innito negativo. Esto nos lleva a referirnos a límites
+laterales que lo haremos más adelante</p>
+<ul class="pa0">
+  
+</ul>
+<div class="mt6 instapaper_ignoref">
+      
+      
+      </div>
+    </div>
+
+    <aside class="w-30-l mt6-l">
+
+
+
+
+</aside>
+
+  </article>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="http://localhost:1313/" >
+    &copy;  darthpedro notes 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>
