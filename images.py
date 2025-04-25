@@ -35,6 +35,7 @@ for root, _, files in os.walk(posts_dir):
 
                 # Reemplaza en el contenido del markdown
                 markdown_image = f"![Image Description](darthpedro-obsidian/images/{image.replace(' ', '%20')})"
+		print(markdown_image)
                 pattern = re.compile(rf'!?(\[\[{re.escape(image)}\]\])')
                 content = pattern.sub(markdown_image, content)
 
