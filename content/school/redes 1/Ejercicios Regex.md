@@ -1,7 +1,7 @@
 ---
 creation date: 2025-04-25 18:09
 modification date: Friday 25th April 2025 18:09:17
-title: Lenguajes
+title: Ejercicios Regex
 ---
 ## Lesson 4: Excluding specific characters
 In some cases, we might know that there are specific characters that we don't want to match too, for example, we might only want to match phone numbers that are _not_ from the area code 650.
