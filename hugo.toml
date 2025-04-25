@@ -1,0 +1,7 @@
+baseURL = 'https://example.org/'
+languageCode = 'en-us'
+title = 'darthpedro notes'
+theme = ["github.com/theNewDynamic/gohugo-theme-ananke/v2"]
+
+
+
