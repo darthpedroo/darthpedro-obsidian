@@ -2,37 +2,37 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Schools on darthpedro notes</title>
-    <link>http://localhost:1313/school/</link>
+    <link>http://localhost:1313/darthpedro-obsidian/school/</link>
     <description>Recent content in Schools on darthpedro notes</description>
     <generator>Hugo</generator>
     <language>es</language>
-    <atom:link href="http://localhost:1313/school/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1313/darthpedro-obsidian/school/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bash</title>
-      <link>http://localhost:1313/school/redes/bash/</link>
+      <link>http://localhost:1313/darthpedro-obsidian/school/redes/bash/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/school/redes/bash/</guid>
+      <guid>http://localhost:1313/darthpedro-obsidian/school/redes/bash/</guid>
       <description>&lt;h1 id=&#34;cuestionario-bandit&#34;&gt;&#xA;  Cuestionario Bandit&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#cuestionario-bandit&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;h2 id=&#34;pregunta-1&#34;&gt;&#xA;  Pregunta 1&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#pregunta-1&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;¿Qué es SSH y para qué sirve? ¿En qué se diferencia de Telnet? ¿De qué maneras lo utilizaron para conectarse al servidor de bandit? ¿Qué es PuTTY y para qué sirve?&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=5JvLV2-ngCI&#34;  class=&#34;external-link&#34; target=&#34;_blank&#34; rel=&#34;noopener&#34;&gt;Como funciona SSH&lt;/a&gt;&lt;/p&gt;&#xA;&lt;h3 id=&#34;que-es-ssh&#34;&gt;&#xA;  Que es SSH&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#que-es-ssh&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h3&gt;&#xA;&lt;p&gt;SSH es un protocolo de red que permite acceder de manera segura a una computadora a través de una red &lt;strong&gt;insegura&lt;/strong&gt; (internet)&lt;/p&gt;</description>
     </item>
     <item>
-      <title>El taller y el cronometro</title>
-      <link>http://localhost:1313/school/gpp/el-taller-y-el-cronometro/</link>
+      <title>Ejercicios Regex</title>
+      <link>http://localhost:1313/darthpedro-obsidian/school/redes-1/ejercicios-regex/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/school/gpp/el-taller-y-el-cronometro/</guid>
-      <description>&lt;h1 id=&#34;frases-importantes--subrayadas&#34;&gt;&#xA;  Frases importantes / Subrayadas&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#frases-importantes--subrayadas&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;El «oficio» pacientemente adquirido, el vaivén de la palma de la mano, el movimiento de los&#xA;dedos, esa «sensación de la lima», por los que todavía a principios de siglo un&#xA;obrero reconoce a uno de los suyos, son ya una especie de arcaísmo&lt;/p&gt;&#xA;&lt;h1 id=&#34;el-cronometro&#34;&gt;&#xA;  El cronometro&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#el-cronometro&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;El cronómetro instaura &lt;strong&gt;métodos de medición de tiempos y movimientos&lt;/strong&gt;.&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>Lenguajes</title>
-      <link>http://localhost:1313/school/redes-1/lenguajes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/school/redes-1/lenguajes/</guid>
+      <guid>http://localhost:1313/darthpedro-obsidian/school/redes-1/ejercicios-regex/</guid>
       <description>&lt;h2 id=&#34;lesson-4-excluding-specific-characters&#34;&gt;&#xA;  Lesson 4: Excluding specific characters&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#lesson-4-excluding-specific-characters&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h2&gt;&#xA;&lt;p&gt;In some cases, we might know that there are specific characters that we don&amp;rsquo;t want to match too, for example, we might only want to match phone numbers that are &lt;em&gt;not&lt;/em&gt; from the area code 650.&lt;/p&gt;&#xA;&lt;p&gt;To represent this, we use a similar expression that &lt;em&gt;excludes specific characters&lt;/em&gt; using the &lt;em&gt;square brackets&lt;/em&gt; and the &lt;em&gt;^&lt;/em&gt; (&lt;em&gt;hat&lt;/em&gt;). For example, the pattern &lt;em&gt;[^abc]&lt;/em&gt; will match any &lt;em&gt;single&lt;/em&gt; character &lt;em&gt;except for&lt;/em&gt; the letters a, b, or c.&lt;/p&gt;</description>
     </item>
     <item>
-      <title>Solaris (1972) segunda parte</title>
-      <link>http://localhost:1313/school/ciencia-tecnologia/solaris-1972-segunda-parte/</link>
+      <title>El taller y el cronometro</title>
+      <link>http://localhost:1313/darthpedro-obsidian/school/gpp/el-taller-y-el-cronometro/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>http://localhost:1313/school/ciencia-tecnologia/solaris-1972-segunda-parte/</guid>
+      <guid>http://localhost:1313/darthpedro-obsidian/school/gpp/el-taller-y-el-cronometro/</guid>
+      <description>&lt;h1 id=&#34;frases-importantes--subrayadas&#34;&gt;&#xA;  Frases importantes / Subrayadas&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#frases-importantes--subrayadas&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;El «oficio» pacientemente adquirido, el vaivén de la palma de la mano, el movimiento de los&#xA;dedos, esa «sensación de la lima», por los que todavía a principios de siglo un&#xA;obrero reconoce a uno de los suyos, son ya una especie de arcaísmo&lt;/p&gt;&#xA;&lt;h1 id=&#34;el-cronometro&#34;&gt;&#xA;  El cronometro&#xA;  &lt;a class=&#34;heading-link&#34; href=&#34;#el-cronometro&#34;&gt;&#xA;    &lt;i class=&#34;fa-solid fa-link&#34; aria-hidden=&#34;true&#34; title=&#34;Link to heading&#34;&gt;&lt;/i&gt;&#xA;    &lt;span class=&#34;sr-only&#34;&gt;Link to heading&lt;/span&gt;&#xA;  &lt;/a&gt;&#xA;&lt;/h1&gt;&#xA;&lt;p&gt;El cronómetro instaura &lt;strong&gt;métodos de medición de tiempos y movimientos&lt;/strong&gt;.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Solaris (1972) segunda parte</title>
+      <link>http://localhost:1313/darthpedro-obsidian/school/ciencia-tecnologia/solaris-1972-segunda-parte/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/darthpedro-obsidian/school/ciencia-tecnologia/solaris-1972-segunda-parte/</guid>
       <description>&lt;p&gt;&lt;strong&gt;1-Hari aparece (hasta el momento) en dos oportunidades. Son dos &amp;ldquo;versiones&amp;rdquo; de Hari? Qué posición adopta Kris frente a cada una?&lt;/strong&gt;&#xA;&lt;strong&gt;¿Cómo creés que te comportarías vos si te pasara? Si si, ya lo sé, poco sabemos de Hari y de Kris. Aunque nos van contando de a poco.&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;p&gt;Tras la primera aparición de Hari, Kris empieza a actuar de manera sorprendida y desesperada. No entiende como es posible que Hari haya llegado a la estación, pues esta se había muerto hace 10 años. En un primer momento, Kris trata de matarla agarrando un arma que tenía Hari entre los pies, pero esta le dice &amp;ldquo;que le hace cosquillas&amp;rdquo; y pierde la oportunidad de deshacerse de ella. Sin embargo, al poco tiempo logra deshacerse de ella al meterla en una nave espacial que la expulsa de la estación Solaris.&#xA;Luego de una charla con Snaut, este le dice a Kris que se tranquilice, que se tome con calma la situación y no entre en pánico la próxima vez que vea a una nueva Hari.&lt;/p&gt;</description>
     </item>
   </channel>

@@ -1,0 +1,366 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head><script src="/darthpedro-obsidian/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=darthpedro-obsidian/livereload" data-no-instant defer></script>
+  <title>
+  Ejercicios Regex · darthpedro notes
+</title>
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="color-scheme" content="light dark">
+
+
+
+
+<meta name="author" content="darthpedro">
+<meta name="description" content="
+  Lesson 4: Excluding specific characters
+  
+    
+    Link to heading
+  
+
+In some cases, we might know that there are specific characters that we don&rsquo;t want to match too, for example, we might only want to match phone numbers that are not from the area code 650.
+To represent this, we use a similar expression that excludes specific characters using the square brackets and the ^ (hat). For example, the pattern [^abc] will match any single character except for the letters a, b, or c.">
+<meta name="keywords" content="blog,developer,personal">
+
+
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Ejercicios Regex">
+  <meta name="twitter:description" content="Lesson 4: Excluding specific characters Link to heading In some cases, we might know that there are specific characters that we don’t want to match too, for example, we might only want to match phone numbers that are not from the area code 650.
+To represent this, we use a similar expression that excludes specific characters using the square brackets and the ^ (hat). For example, the pattern [^abc] will match any single character except for the letters a, b, or c.">
+
+<meta property="og:url" content="http://localhost:1313/darthpedro-obsidian/school/redes-1/ejercicios-regex/">
+  <meta property="og:site_name" content="darthpedro notes">
+  <meta property="og:title" content="Ejercicios Regex">
+  <meta property="og:description" content="Lesson 4: Excluding specific characters Link to heading In some cases, we might know that there are specific characters that we don’t want to match too, for example, we might only want to match phone numbers that are not from the area code 650.
+To represent this, we use a similar expression that excludes specific characters using the square brackets and the ^ (hat). For example, the pattern [^abc] will match any single character except for the letters a, b, or c.">
+  <meta property="og:locale" content="es">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="school">
+
+
+
+
+<link rel="canonical" href="http://localhost:1313/darthpedro-obsidian/school/redes-1/ejercicios-regex/">
+
+
+<link rel="preload" href="/fonts/fa-brands-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-regular-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/fonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
+
+
+  
+  
+  <link rel="stylesheet" href="/darthpedro-obsidian/css/coder.css" media="screen">
+
+
+
+
+
+
+  
+    
+    
+    <link rel="stylesheet" href="/darthpedro-obsidian/css/coder-dark.css" media="screen">
+  
+
+
+
+ 
+
+
+
+
+<link rel="icon" type="image/svg+xml" href="/img/favicon.svg" sizes="any">
+<link rel="icon" type="image/png" href="/img/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/favicon-16x16.png" sizes="16x16">
+
+<link rel="apple-touch-icon" href="/images/apple-touch-icon.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+<link rel="manifest" href="/site.webmanifest">
+<link rel="mask-icon" href="/images/safari-pinned-tab.svg" color="#5bbad5">
+
+
+
+
+
+
+
+
+
+</head>
+
+
+
+
+
+
+<body class="preload-transitions colorscheme-auto">
+  
+<div class="float-container">
+    <a id="dark-mode-toggle" class="colorscheme-toggle">
+        <i class="fa-solid fa-adjust fa-fw" aria-hidden="true"></i>
+    </a>
+</div>
+
+
+  <main class="wrapper">
+    <nav class="navigation">
+  <section class="container">
+    
+    <a class="navigation-title" href="http://localhost:1313/darthpedro-obsidian/">
+      darthpedro notes
+    </a>
+    
+    
+      <input type="checkbox" id="menu-toggle" />
+      <label class="menu-button float-right" for="menu-toggle">
+        <i class="fa-solid fa-bars fa-fw" aria-hidden="true"></i>
+      </label>
+      <ul class="navigation-list">
+        
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/darthpedro-obsidian/lyrics/">Lyrics</a>
+            </li>
+          
+            <li class="navigation-item">
+              <a class="navigation-link " href="/darthpedro-obsidian/school/">school</a>
+            </li>
+          
+        
+        
+      </ul>
+    
+  </section>
+</nav>
+
+
+    <div class="content">
+      
+  <section class="container page">
+  <article>
+    <header>
+      <h1 class="title">
+        <a class="title-link" href="http://localhost:1313/darthpedro-obsidian/school/redes-1/ejercicios-regex/">
+          Ejercicios Regex
+        </a>
+      </h1>
+    </header>
+
+    <h2 id="lesson-4-excluding-specific-characters">
+  Lesson 4: Excluding specific characters
+  <a class="heading-link" href="#lesson-4-excluding-specific-characters">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>In some cases, we might know that there are specific characters that we don&rsquo;t want to match too, for example, we might only want to match phone numbers that are <em>not</em> from the area code 650.</p>
+<p>To represent this, we use a similar expression that <em>excludes specific characters</em> using the <em>square brackets</em> and the <em>^</em> (<em>hat</em>). For example, the pattern <em>[^abc]</em> will match any <em>single</em> character <em>except for</em> the letters a, b, or c.</p>
+<p>With the strings below, try writing a pattern that matches only the live animals (hog, dog, but not bog). Notice how most patterns of this type can also be written using the technique from the last lesson as they are really two sides of the same coin. By having both choices, you can decide which one is easier to write and understand when composing your own patterns.</p>
+<p><img src="/images/Pasted%20image%2020250425183144.png" alt="Image Description"></p>
+<h2 id="lesson-5-character-ranges">
+  Lesson 5: Character ranges
+  <a class="heading-link" href="#lesson-5-character-ranges">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>We just learned how to create a pattern that matches or excludes specific characters &ndash; but what if we want to match a character that can be in a sequential range characters? Do we have no choice but to list them all out?</p>
+<p>Luckily, when using the square bracket notation, there is a shorthand for matching a character in list of <em>sequential characters</em> by using the <em>dash</em> to indicate a character range. For example, the pattern <em>[0-6]</em> will only match any single digit character from zero to six, and nothing else. And likewise, <em>[^n-p]</em> will only match any single character <em>except</em> for letters n to p.</p>
+<p>Multiple character ranges can also be used in the same set of brackets, along with individual characters. An example of this is the alphanumeric <em>\w</em> metacharacter which is equivalent to the character range <em>[A-Za-z0-9</em>]_ and often used to match characters in English text.</p>
+<p>In the exercise below, notice how all the match and skip lines have a pattern, and use the bracket notation to match or skip each character from each line. Be aware that patterns are <em>case sensitive</em> and <em>a-z differs</em> from <em>A-Z</em> in terms of the characters it matches (lower vs upper case).</p>
+<p><img src="/images/Pasted%20image%2020250425183430.png" alt="Image Description"></p>
+<h2 id="lesson-6-catching-some-zzzs">
+  Lesson 6: Catching some zzz&rsquo;s
+  <a class="heading-link" href="#lesson-6-catching-some-zzzs">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p><em>Note: Some parts of the repetition syntax below isn&rsquo;t supported in all regular expression implementations.</em></p>
+<p>We&rsquo;ve so far learned how to specify the range of characters we want to match, but how about the number of <em>repetitions</em> of characters that we want to match? One way that we can do this is to explicitly spell out exactly how many characters we want, eg. <em>\d\d\d</em> which would match exactly three digits.</p>
+<p>A more convenient way is to specify how many repetitions of each character we want using the <em>curly braces</em> notation. For example, <em>a{3}</em> will match the a character exactly three times. Certain regular expression engines will even allow you to specify a range for this repetition such that <em>a{1,3}</em> will match the a character no more than 3 times, but no less than once for example.</p>
+<p>This quantifier can be used with any character, or special metacharacters, for example <em>w{3}</em> (three w&rsquo;s), <em>[wxy]{5}</em> (five characters, each of which can be a w, x, or y) and <em>.{2,6}</em> (between two and six of <em>any</em> character).</p>
+<p>In the lines below, the last string with only one z isn&rsquo;t what we would consider a proper spelling of the slang &ldquo;wazzup?&rdquo;. Try writing a pattern that matches only the first two spellings by using the curly brace notation above.
+<img src="/images/Pasted%20image%2020250425183940.png" alt="Image Description"></p>
+<h2 id="lesson-7-mr-kleene-mr-kleene">
+  Lesson 7: Mr. Kleene, Mr. Kleene
+  <a class="heading-link" href="#lesson-7-mr-kleene-mr-kleene">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>A powerful concept in regular expressions is the ability to match an arbitrary number of characters. For example, imagine that you wrote a form that has a donation field that takes a numerical value in dollars. A wealthy user may drop by and want to donate $25,000, while a normal user may want to donate $25.</p>
+<p>One way to express such a pattern would be to use what is known as the <em>Kleene Star</em> and the <em>Kleene Plus</em>, which essentially represents either <em>0 or more</em> or <em>1 or more</em> of the character that it follows (it always follows a character or group). For example, to match the donations above, we can use the pattern <em>\d*</em> to match any number of digits, but a tighter regular expression would be <em>\d+</em> which ensures that the input string has at least one digit.</p>
+<p>These quantifiers can be used with any character or special metacharacters, for example <em>a+</em> (one or more a&rsquo;s), <em>[abc]+</em> (one or more of any a, b, or c character) and <em>.*</em> (zero or more of <em>any</em> character).</p>
+<p>Below are a few simple strings that you can match using both the star and plus metacharacters.</p>
+<p><img src="/images/Pasted%20image%2020250425184204.png" alt="Image Description"></p>
+<h2 id="lesson-8-characters-optional">
+  Lesson 8: Characters optional
+  <a class="heading-link" href="#lesson-8-characters-optional">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As you saw in the previous lesson, the Kleene star and plus allow us to match repeated characters in a line.</p>
+<p>Another quantifier that is really common when matching and extracting text is the <em>?</em> (question mark) metacharacter which denotes <em>optionality</em>. This metacharacter allows you to match either zero or one of the preceding character or group. For example, the pattern <em>ab?c</em> will match either the strings &ldquo;abc&rdquo; or &ldquo;ac&rdquo; because the b is considered optional.</p>
+<p>Similar to the dot metacharacter, the question mark is a special character and you will have to escape it using a slash <em>?</em> to match a plain question mark character in a string.</p>
+<p>In the strings below, notice how the the plurality of the word &ldquo;file&rdquo; depends on the number of files found. Try writing a pattern that uses the optionality metacharacter to match only the lines where one or more files were found.</p>
+<p><img src="/images/Pasted%20image%2020250425185118.png" alt="Image Description"></p>
+<h2 id="lesson-9-all-this-whitespace">
+  Lesson 9: All this whitespace
+  <a class="heading-link" href="#lesson-9-all-this-whitespace">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>When dealing with real-world input, such as log files and even user input, it&rsquo;s difficult not to encounter whitespace. We use it to format pieces of information to make it easier to read and scan visually, and a single space can put a wrench into the simplest regular expression.</p>
+<p>The most common forms of whitespace you will use with regular expressions are the <em>space</em> (<em>␣</em>), the <em>tab</em> (<em>\t</em>), the <em>new line</em> (<em>\n</em>) and the carriage return (<em>\r</em>) (useful in Windows environments), and these special characters match each of their respective whitespaces. In addition, a <em>whitespace</em> special character <em>\s</em> will match <em>any</em> of the specific whitespaces above and is extremely useful when dealing with raw input text.</p>
+<p>In the strings below, you&rsquo;ll find that the content of each line is indented by some whitespace from the index of the line (<em>the number is a part of the text to match</em>). Try writing a pattern that can match each line containing whitespace characters between the number and the content. Notice that the whitespace characters are just like any other character and the special metacharacters like the star and the plus can be used as well.</p>
+<p><img src="/images/Pasted%20image%2020250425185816.png" alt="Image Description"></p>
+<h2 id="lesson-10-starting-and-ending">
+  Lesson 10: Starting and ending
+  <a class="heading-link" href="#lesson-10-starting-and-ending">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>So far, we&rsquo;ve been writing regular expressions that partially match pieces across all the text. Sometimes this isn&rsquo;t desirable, imagine for example we wanted to match the word &ldquo;success&rdquo; in a log file. We certainly don&rsquo;t want that pattern to match a line that says &ldquo;Error: unsuccessful operation&rdquo;! That is why it is often <em>best practice to write as specific regular expressions as possible</em> to ensure that we don&rsquo;t get false positives when matching against real world text.</p>
+<p>One way to tighten our patterns is to define a pattern that describes both the <em>start and the end of the line</em> using the special <em>^</em> (<em>hat</em>) and <em>$</em> (<em>dollar sign</em>) metacharacters. In the example above, we can use the pattern <em>^success</em> to match <em>only</em> a line that begins with the word &ldquo;success&rdquo;, but not the line &ldquo;Error: unsuccessful operation&rdquo;. And if you combine both the hat and the dollar sign, you create a pattern that matches the whole line completely at the beginning and end.</p>
+<p>Note that this is different than the hat used inside a set of bracket <em>[^&hellip;]</em> for excluding characters, which can be confusing when reading regular expressions.</p>
+<p>Try to match each of the strings below using these new special characters.</p>
+<p><img src="/images/Pasted%20image%2020250425190234.png" alt="Image Description"></p>
+<h2 id="lesson-11-match-groups">
+  Lesson 11: Match groups
+  <a class="heading-link" href="#lesson-11-match-groups">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>Regular expressions allow us to not just match text but also to <em>extract information for further processing</em>. This is done by defining <em>groups of characters</em> and capturing them using the special parentheses <em>(</em> and <em>)</em> metacharacters. Any subpattern inside a pair of parentheses will be <em>captured</em> as a group. In practice, this can be used to extract information like phone numbers or emails from all sorts of data.</p>
+<p>Imagine for example that you had a command line tool to list all the image files you have in the cloud. You could then use a pattern such as</p>
+<p><code>^(IMG\d+\.png)$</code></p>
+<p>Go ahead and try to use this to write a regular expression that matches only the filenames (not including extension) of the PDF files below.</p>
+<p><img src="/images/Pasted%20image%2020250425191344.png" alt="Image Description"></p>
+<h2 id="lesson-12-nested-groups">
+  Lesson 12: Nested groups
+  <a class="heading-link" href="#lesson-12-nested-groups">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>When you are working with complex data, you can easily find yourself having to extract multiple layers of information, which can result in nested groups. Generally, the results of the captured groups are in the order in which they are defined (in order by open parenthesis).</p>
+<p>Take the example from the previous lesson, of capturing the filenames of all the image files you have in a list. If each of these image files had a sequential picture number in the filename, you could extract both the filename and the picture number using the same pattern by writing an expression like <em>^(IMG(\d+)).png$</em> (using a nested parenthesis to capture the digits).</p>
+<p>The nested groups are read from left to right in the pattern, with the first capture group being the contents of the first parentheses group, etc.</p>
+<p>For the following strings, write an expression that matches <em>and captures</em> both the full date, as well as the year of the date.</p>
+<p><img src="/images/Pasted%20image%2020250425192311.png" alt="Image Description"></p>
+<h2 id="lesson-13-more-group-work">
+  Lesson 13: More group work
+  <a class="heading-link" href="#lesson-13-more-group-work">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As you saw in the previous lessons, all the quantifiers including the star <em>*</em>, plus <em>+</em>, repetition <em>{m,n}</em> and the question mark <em>?</em> can all be used within the capture group patterns. This is the only way to apply quantifiers on sequences of characters instead of the individual characters themselves.</p>
+<p>For example, if I knew that a phone number may or may not contain an area code, the right pattern would test for the existence of the whole group of digits <em>(\d{3})?</em> and not the individual characters themselves (which would be wrong).</p>
+<p>Depending on the regular expression engine you are using, you can also use non-capturing groups which will allow you to match the group but not have it show up in the results.</p>
+<p>Below are a couple different common display resolutions, try to capture the width and height of each display.</p>
+<p><img src="/images/Pasted%20image%2020250425193033.png" alt="Image Description"></p>
+<h2 id="lesson-14-its-all-conditional">
+  Lesson 14: It&rsquo;s all conditional
+  <a class="heading-link" href="#lesson-14-its-all-conditional">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>As we mentioned before, it&rsquo;s always good to be precise, and that applies to coding, talking, and even regular expressions. For example, you wouldn&rsquo;t write a grocery list for someone to <em>Buy more .*</em> because you would have no idea what you could get back. Instead you would write <em>Buy more milk</em> or <em>Buy more bread</em>, and in regular expressions, we can actually define these conditionals explicitly.</p>
+<p>Specifically when using groups, you can use the <em>|</em> (<em>logical OR, aka. the pipe</em>) to denote <em>different possible sets of characters</em>. In the above example, I can write the pattern &ldquo;Buy more (milk|bread|juice)&rdquo; to match only the strings Buy more milk, Buy more bread, or Buy more juice.</p>
+<p>Like normal groups, you can use any sequence of characters or metacharacters in a condition, for example, ([cb]ats*|[dh]ogs?) would match either cats or bats, or, dogs or hogs. Writing patterns with many conditions can be hard to read, so you should consider making them separate patterns if they get too complex.</p>
+<p>Go ahead and try writing a conditional pattern that matches only the lines with small fuzzy creatures below.</p>
+<p><img src="/images/Pasted%20image%2020250425193414.png" alt="Image Description"></p>
+<h2 id="lesson-15-other-special-characters">
+  Lesson 15: Other special characters
+  <a class="heading-link" href="#lesson-15-other-special-characters">
+    <i class="fa-solid fa-link" aria-hidden="true" title="Link to heading"></i>
+    <span class="sr-only">Link to heading</span>
+  </a>
+</h2>
+<p>This lesson will cover some extra metacharacters, as well as the results of captured groups.</p>
+<p>We have already learned the most common metacharacters to capture digits using <em>\d</em>, whitespace using <em>\s</em>, and alphanumeric letters and digits using <em>\w</em>, but regular expressions also provides a way of specifying the opposite sets of each of these metacharacters by using their upper case letters. For example, <em>\D</em> represents any <em>non-digit</em> character, <em>\S</em> any <em>non-whitespace</em> character, and <em>\W</em> any <em>non-alphanumeric</em> character (such as punctuation). Depending on how you compose your regular expression, it may be easier to use one or the other.</p>
+<p>Additionally, there is a special metacharacter <em>\b</em> which matches the boundary between a word and a non-word character. It&rsquo;s most useful in capturing entire words (for example by using the pattern <em>\w+\b</em>).</p>
+<p>One concept that we will not explore in great detail in these lessons is <em>back referencing</em>, mostly because it varies depending on the implementation. However, many systems allow you to reference your captured groups by using <em>\0</em> (usually the full matched text), <em>\1</em> (group 1), <em>\2</em> (group 2), etc. This is useful for example when you are in a text editor and doing a search and replace using regular expressions to swap two numbers, you can search for &ldquo;(\d+)-(\d+)&rdquo; and replace it with &ldquo;\2-\1&rdquo; to put the second captured number first, and the first captured number second for example.</p>
+<p>Below are a number of different strings, try out the different types of metacharacters or anything we&rsquo;ve learned in the previous lessons and continue on when you are ready.</p>
+
+  </article>
+</section>
+
+  
+
+    </div>
+
+    <footer class="footer">
+  <section class="container">
+    ©
+    
+    2025
+     darthpedro 
+    ·
+    
+    Desarrollado por <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> & <a href="https://github.com/luizdepra/hugo-coder/" target="_blank" rel="noopener">Coder</a>.
+    
+  </section>
+</footer>
+
+  </main>
+
+  
+
+  
+  
+  <script src="/darthpedro-obsidian/js/coder.js"></script>
+  
+
+  
+
+  
+
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</body>
+</html>
