@@ -1,7 +1,7 @@
 ---
 creation date: 2025-04-26 00:45
 modification date: Saturday 26th April 2025 00:45:27
-title: Untitled
+title: vicarious
 type: lyrics
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426010237.png)

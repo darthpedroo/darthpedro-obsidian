@@ -1,7 +1,7 @@
 ---
 creation date: 2025-04-26 01:06
 modification date: Saturday 26th April 2025 01:06:59
-title: Untitled
+title: sober
 type: lyrics
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426010733.png)
