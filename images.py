@@ -18,32 +18,59 @@ for root, _, files in os.walk(posts_dir):
 
             with open(filepath, "r") as file:
                 content = file.read()
+           #     print("xf", content)
 
-            # Detecta imágenes estilo Obsidian ![[image.png]]
-            images = re.findall(r'!?\[\[([^/\]]+\.png)\]\]', content)
+            # Detecta imágenes Obsidian-style
+            images = re.findall(r'!?\[\[([^\]]+\.(?:png|jpg|jpeg|webp|gif|PNG|JPG))\]\]', content)
+            # Detecta imágenes estilo Obsidian: ![[image.png]] o [[image.png]]
+            obsidian_images = re.findall(r'!?\[\[([^/\]]+\.png)\]\]', content)
 
+            # Detecta imágenes ya procesadas: ![...](.../image.png)
+            processed_images = re.findall(r'!\[.*?\]\((?:.*/)?([^/\]]+\.png)\)', content)
+
+            # Combina ambos, sin repetir
+            all_images = list(set(obsidian_images + processed_images))
+
+            if not all_images:
+                pass
+              #  print(f"⚠️ No se detectaron imágenes en: {filename}")
+            else:
+                pass
+              #  print("imagenes encontradas en :", filename, "las imagenes son: ", all_images )
+
+            images = all_images
             for image in images:
                 original_path = os.path.join(attachments_dir, image)
                 new_obsidian_path = os.path.join(obsidian_images_dir, image)
 
-                # Mueve la imagen desde root a /images si no existe ya ahí
+                # Mueve la imagen desde el root de la vault a /images
                 if os.path.exists(original_path) and not os.path.exists(new_obsidian_path):
                     shutil.move(original_path, new_obsidian_path)
                     print(f"✅ Movida: {image} → /images/")
                 elif not os.path.exists(original_path) and not os.path.exists(new_obsidian_path):
                     print(f"⚠️ No encontrada: {original_path}")
 
-                # Cambia el link en el .md al formato absoluto para GitHub Pages
-                markdown_image = f"![Image Description](https://darthpedroo.github.io/darthpedro-obsidian/images/{image.replace(' ', '%20')})"
-                pattern = re.compile(rf'!?(\[\[{re.escape(image)}\]\])')
-                content = pattern.sub(markdown_image, content)
+                # Reemplaza en el contenido del markdown
+                markdown_image = f"![Image Description](images/{image.replace(' ', '%20')})"
+                
+                escaped_image = re.escape(image)
+                pattern = re.compile(r'!?\[\[' + escaped_image + r'\]\]')
 
-                # Copia la imagen a static/images/ para Hugo
+                #pattern = re.compile(rf'!?(\[\[{re.escape(image)}\]\])')
+                content = pattern.sub(lambda m: markdown_image, content)
+
+
+                print("MARKDOWN IMAGE : ", markdown_image)
+              #  print("content", content)
+
+
+                # Copia imagen a static/images de Hugo
                 if os.path.exists(new_obsidian_path):
                     shutil.copy(new_obsidian_path, os.path.join(static_images_dir, image))
 
-            # Guarda el nuevo contenido del markdown
+            # Escribe los cambios al archivo
             with open(filepath, "w") as file:
                 file.write(content)
+             #   print("escribiendo contenido: ", content)
 
-print("🎉 ¡Todo listo! Imágenes movidas, copiadas y markdowns corregidos.")
+print("🎉 ¡Todo listo! Archivos corregidos, imágenes movidas y copiadas.")
