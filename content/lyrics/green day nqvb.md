@@ -5,6 +5,6 @@ title: Untitled
 type: lyrics
 ---
 
-![Image Description](/images/Pasted%20image%2020250426005916.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426005916.png)
 
 me va a dar un paataus

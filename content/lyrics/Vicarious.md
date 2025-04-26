@@ -6,8 +6,6 @@ type: lyrics
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426010237.png)
 
-
-
 Eye on the TV, 'cause tragedy thrills me  
 Whatever flavor it happens to be like  
 "Killed by the husband"  
