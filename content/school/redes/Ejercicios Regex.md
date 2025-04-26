@@ -34,7 +34,7 @@ A more convenient way is to specify how many repetitions of each character we wa
 This quantifier can be used with any character, or special metacharacters, for example _w{3}_ (three w's), _[wxy]{5}_ (five characters, each of which can be a w, x, or y) and _.{2,6}_ (between two and six of _any_ character).
 
 In the lines below, the last string with only one z isn't what we would consider a proper spelling of the slang "wazzup?". Try writing a pattern that matches only the first two spellings by using the curly brace notation above.
-![Image Description](Pasted%20image%2020250425183940.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425183940.png)
 
 ## Lesson 7: Mr. Kleene, Mr. Kleene
 
@@ -46,7 +46,7 @@ These quantifiers can be used with any character or special metacharacters, for 
 
 Below are a few simple strings that you can match using both the star and plus metacharacters.
 
-![Image Description](Pasted%20image%2020250425184204.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425184204.png)
 
 ## Lesson 8: Characters optional
 As you saw in the previous lesson, the Kleene star and plus allow us to match repeated characters in a line.
@@ -57,7 +57,7 @@ Similar to the dot metacharacter, the question mark is a special character and y
 
 In the strings below, notice how the the plurality of the word "file" depends on the number of files found. Try writing a pattern that uses the optionality metacharacter to match only the lines where one or more files were found.
 
-![Image Description](Pasted%20image%2020250425185118.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425185118.png)
 
 ## Lesson 9: All this whitespace
 When dealing with real-world input, such as log files and even user input, it's difficult not to encounter whitespace. We use it to format pieces of information to make it easier to read and scan visually, and a single space can put a wrench into the simplest regular expression.
@@ -66,7 +66,7 @@ The most common forms of whitespace you will use with regular expressions are th
 
 In the strings below, you'll find that the content of each line is indented by some whitespace from the index of the line (_the number is a part of the text to match_). Try writing a pattern that can match each line containing whitespace characters between the number and the content. Notice that the whitespace characters are just like any other character and the special metacharacters like the star and the plus can be used as well.
 
-![Image Description](Pasted%20image%2020250425185816.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425185816.png)
 
 ## Lesson 10: Starting and ending
 So far, we've been writing regular expressions that partially match pieces across all the text. Sometimes this isn't desirable, imagine for example we wanted to match the word "success" in a log file. We certainly don't want that pattern to match a line that says "Error: unsuccessful operation"! That is why it is often _best practice to write as specific regular expressions as possible_ to ensure that we don't get false positives when matching against real world text.
@@ -77,7 +77,7 @@ Note that this is different than the hat used inside a set of bracket _[^...]_ f
 
 Try to match each of the strings below using these new special characters.
 
-![Image Description](Pasted%20image%2020250425190234.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425190234.png)
 
 
 ## Lesson 11: Match groups
@@ -90,7 +90,7 @@ Imagine for example that you had a command line tool to list all the image files
 
 Go ahead and try to use this to write a regular expression that matches only the filenames (not including extension) of the PDF files below.
 
-![Image Description](Pasted%20image%2020250425191344.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425191344.png)
 
 ## Lesson 12: Nested groups
 When you are working with complex data, you can easily find yourself having to extract multiple layers of information, which can result in nested groups. Generally, the results of the captured groups are in the order in which they are defined (in order by open parenthesis).
@@ -101,7 +101,7 @@ The nested groups are read from left to right in the pattern, with the first cap
 
 For the following strings, write an expression that matches _and captures_ both the full date, as well as the year of the date.
 
-![Image Description](Pasted%20image%2020250425192311.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425192311.png)
 
 ## Lesson 13: More group work
 As you saw in the previous lessons, all the quantifiers including the star _*_, plus _+_, repetition _{m,n}_ and the question mark _?_ can all be used within the capture group patterns. This is the only way to apply quantifiers on sequences of characters instead of the individual characters themselves.
@@ -112,7 +112,7 @@ Depending on the regular expression engine you are using, you can also use non-c
 
 Below are a couple different common display resolutions, try to capture the width and height of each display.
 
-![Image Description](Pasted%20image%2020250425193033.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425193033.png)
 
 ## Lesson 14: It's all conditional
 As we mentioned before, it's always good to be precise, and that applies to coding, talking, and even regular expressions. For example, you wouldn't write a grocery list for someone to _Buy more .*_ because you would have no idea what you could get back. Instead you would write _Buy more milk_ or _Buy more bread_, and in regular expressions, we can actually define these conditionals explicitly.
@@ -123,7 +123,7 @@ Like normal groups, you can use any sequence of characters or metacharacters in 
 
 Go ahead and try writing a conditional pattern that matches only the lines with small fuzzy creatures below.
 
-![Image Description](Pasted%20image%2020250425193414.png)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250425193414.png)
 
 ## Lesson 15: Other special characters
 This lesson will cover some extra metacharacters, as well as the results of captured groups.

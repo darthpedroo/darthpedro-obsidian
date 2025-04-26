@@ -3,6 +3,7 @@ creation date: 2025-04-25 10:37
 modification date: Friday 25th April 2025 10:37:40
 title: Solaris (1972) segunda parte
 ---
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426011333.png)
 
 **1-Hari aparece (hasta el momento) en dos oportunidades. Son dos "versiones" de Hari? Qué posición adopta Kris frente a cada una?** 
 **¿Cómo creés que te comportarías vos si te pasara? Si si, ya lo sé, poco sabemos de Hari y de Kris. Aunque nos van contando de a poco.**  
