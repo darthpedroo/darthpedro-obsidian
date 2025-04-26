@@ -19,33 +19,31 @@ for root, _, files in os.walk(posts_dir):
             with open(filepath, "r") as file:
                 content = file.read()
 
-            # Detecta imágenes Obsidian-style
+            # Detecta imágenes estilo Obsidian ![[image.png]]
             images = re.findall(r'!?\[\[([^/\]]+\.png)\]\]', content)
 
             for image in images:
                 original_path = os.path.join(attachments_dir, image)
                 new_obsidian_path = os.path.join(obsidian_images_dir, image)
 
-                # Mueve la imagen desde el root de la vault a /images
+                # Mueve la imagen desde root a /images si no existe ya ahí
                 if os.path.exists(original_path) and not os.path.exists(new_obsidian_path):
                     shutil.move(original_path, new_obsidian_path)
                     print(f"✅ Movida: {image} → /images/")
                 elif not os.path.exists(original_path) and not os.path.exists(new_obsidian_path):
                     print(f"⚠️ No encontrada: {original_path}")
 
-                # Reemplaza en el contenido del markdown
-#                markdown_image = f"![Image Description](darthpedro-obsidian/images/{image.replace(' ', '%20')})"
-		markdown_image = f"![Image Description](images/{image.replace(' ', '%20')})"
-		print(markdown_image)
+                # Cambia el link en el .md al formato absoluto para GitHub Pages
+                markdown_image = f"![Image Description](/darthpedro-obsidian/images/{image.replace(' ', '%20')})"
                 pattern = re.compile(rf'!?(\[\[{re.escape(image)}\]\])')
                 content = pattern.sub(markdown_image, content)
 
-                # Copia imagen a static/images de Hugo
+                # Copia la imagen a static/images/ para Hugo
                 if os.path.exists(new_obsidian_path):
                     shutil.copy(new_obsidian_path, os.path.join(static_images_dir, image))
 
-            # Escribe los cambios al archivo
+            # Guarda el nuevo contenido del markdown
             with open(filepath, "w") as file:
                 file.write(content)
 
-print("🎉 ¡Todo listo! Archivos corregidos, imágenes movidas y copiadas.")
+print("🎉 ¡Todo listo! Imágenes movidas, copiadas y markdowns corregidos.")
