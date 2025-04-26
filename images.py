@@ -51,7 +51,7 @@ for root, _, files in os.walk(posts_dir):
                     print(f"⚠️ No encontrada: {original_path}")
 
                 # Reemplaza en el contenido del markdown
-                markdown_image = f"![Image Description](images/{image.replace(' ', '%20')})"
+                markdown_image = f"![Image Description](/images/{image.replace(' ', '%20')})"
                 
                 escaped_image = re.escape(image)
                 pattern = re.compile(r'!?\[\[' + escaped_image + r'\]\]')

@@ -4,4 +4,7 @@ modification date: Saturday 26th April 2025 00:55:06
 title: Untitled
 type: lyrics
 ---
-![Image Description](images/Pasted%20image%2020250426005603.png)
+
+![Image Description](/images/Pasted%20image%2020250426005916.png)
+
+me va a dar un paataus
