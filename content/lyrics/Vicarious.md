@@ -5,7 +5,7 @@ title: Untitled
 type: lyrics
 ---
 
-![Image Description](Pasted%20image%2020250426004729.png)
+
 
 Eye on the TV, 'cause tragedy thrills me  
 Whatever flavor it happens to be like  
