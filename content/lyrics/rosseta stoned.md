@@ -4,9 +4,6 @@ lastmod: "2025-04-27T22:53:11-03:00"
 title: rosseta stoned
 type: lyrics
 ---
-![Image Description](Lateralus.png)
-
-
 {{< youtube qnlhVVwBfew >}}
 
 Alrighty, then ... picture this if you will.
