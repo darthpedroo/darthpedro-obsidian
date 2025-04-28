@@ -4,7 +4,7 @@ modification date: Friday 25th April 2025 02:02:36
 title: 46 and 2
 type: lyrics
 ---
-![Image Description](/images/Pasted%20image%2020250425020308.png)
+![Image Description](Pasted%20image%2020250425020308.png)
 
 Join in my  
 Join in my child  

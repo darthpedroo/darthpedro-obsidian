@@ -4,7 +4,7 @@ modification date: Friday 25th April 2025 01:53:24
 title: rosseta stoned
 type: lyrics
 ---
-![Image Description](/images/Lateralus.png)
+![Image Description](Lateralus.png)
 
 
 Alrighty, then ... picture this if you will.
