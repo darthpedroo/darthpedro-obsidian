@@ -1,6 +1,6 @@
 ---
-creation date: 2025-04-25 03:02
-modification date: Friday 25th April 2025 03:02:38
+date: 2025-04-25 03:02
+lastmod: Friday 25th April 2025 03:02:38
 title: schism
 type: lyrics
 ---

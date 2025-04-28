@@ -1,6 +1,6 @@
 ---
-creation date: 2025-04-25 01:53
-modification date: Friday 25th April 2025 01:53:24
+date: 2025-04-25 01:53
+lastmod: Friday 25th April 2025 01:53:24
 title: rosseta stoned
 type: lyrics
 ---
