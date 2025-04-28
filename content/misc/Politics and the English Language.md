@@ -1,8 +1,9 @@
----
-creation date: 2025-04-27 21:34
-modification date: Sunday 27th April 2025 21:34:13
-title: Politics and the English Language
----
++++
+date = 2025-04-27T21:34:00
+lastmod = 2025-04-27T21:34:13
+title = "Politics and the English Language"
++++
+
 [Source](https://www.writingclasses.com/toolbox/tips-masters/george-orwell-6-questions-6-rules)
 
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250427213519.png)
