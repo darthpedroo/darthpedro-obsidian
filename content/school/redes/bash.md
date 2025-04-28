@@ -1,8 +1,4 @@
----
-date: 2025-04-25 02:44
-lastmod: Friday 25th April 2025 02:44:41
-title: bash
----
+
 # Cuestionario Bandit
 
 ## Pregunta 1

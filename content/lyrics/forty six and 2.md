@@ -1,9 +1,4 @@
----
-date: 2025-04-25 02:02
-lastmod: Friday 25th April 2025 02:02:36
-title: 46 and 2
-type: lyrics
----
+
 ![Image Description](Pasted%20image%2020250425020308.png)
 
 Join in my  

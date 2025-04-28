@@ -1,8 +1,4 @@
----
-date: 2025-04-25 02:32
-lastmod: Friday 25th April 2025 02:32:00
-title: El taller y el cronometro
----
+
 
 # Frases importantes / Subrayadas
 El «oficio» pacientemente adquirido, el vaivén de la palma de la mano, el movimiento de los
