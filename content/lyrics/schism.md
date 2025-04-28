@@ -1,4 +1,9 @@
-
+---
+date: "2025-04-27T22:53:11-03:00"  
+lastmod: "2025-04-27T22:53:11-03:00"
+title: schism
+type: lyrics
+---
 I know the pieces fit  
 'Cause I watched them fall away  
 Mildewed and smouldering  

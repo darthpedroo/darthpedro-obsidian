@@ -1,4 +1,8 @@
-
+---
+date: "2025-04-27T22:53:11-03:00"  
+lastmod: "2025-04-27T22:53:11-03:00"
+title: cuestionario bandit
+---
 # Cuestionario Bandit
 
 ## Pregunta 1
