@@ -7,6 +7,8 @@ type: lyrics
 ![Image Description](Lateralus.png)
 
 
+{{< youtube qnlhVVwBfew >}}
+
 Alrighty, then ... picture this if you will.
 
 10 to 2 AM, X, Yogi DMT, and a box of Krispy Kremes,  
