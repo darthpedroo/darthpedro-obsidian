@@ -3,6 +3,8 @@ creation date: 2025-04-27 21:34
 modification date: Sunday 27th April 2025 21:34:13
 title: Politics and the English Language
 ---
+[Source](https://www.writingclasses.com/toolbox/tips-masters/george-orwell-6-questions-6-rules)
+
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250427213519.png)
 
 George Orwell has earned the right to be called one of the finer writers in the English language through such novels as _1984,_ _Animal Farm,_ and _Down and Out in Paris and London,_ and essays like "Shooting an Elephant."
