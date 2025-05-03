@@ -3,6 +3,7 @@ date: "2025-04-27T22:53:11-03:00"
 lastmod: "2025-04-27T22:53:11-03:00"
 title: solaris segunda parte
 ---
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426011333.png)
 
 **1-Hari aparece (hasta el momento) en dos oportunidades. Son dos "versiones" de Hari? Qué posición adopta Kris frente a cada una?** 
 **¿Cómo creés que te comportarías vos si te pasara? Si si, ya lo sé, poco sabemos de Hari y de Kris. Aunque nos van contando de a poco.**  
