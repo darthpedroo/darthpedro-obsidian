@@ -1,7 +1,7 @@
 ---
-creation date: 2025-04-25 10:37
-modification date: Friday 25th April 2025 10:37:40
-title: Solaris (1972) segunda parte
+date: "2025-04-27T22:53:11-03:00"  
+lastmod: "2025-04-27T22:53:11-03:00"
+title: solaris segunda parte
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426011333.png)
 

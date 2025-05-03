@@ -5,7 +5,7 @@ import shutil
 # Paths
 attachments_dir = "/home/porky/public-notes"
 posts_dir = os.path.join(attachments_dir, 'public')
-obsidian_images_dir = os.path.join(attachments_dir, 'images')
+obsidian_images_dir = os.path.join(attachments_dir, 'darthpedro-obsidian/images')
 static_images_dir = "/home/porky/darthpedro/obsidian-darthpedro/static/images"
 
 os.makedirs(obsidian_images_dir, exist_ok=True)

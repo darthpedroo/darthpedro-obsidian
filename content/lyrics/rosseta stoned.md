@@ -1,11 +1,10 @@
 ---
-creation date: 2025-04-25 01:53
-modification date: Friday 25th April 2025 01:53:24
+date: "2025-04-27T22:53:11-03:00"  
+lastmod: "2025-04-27T22:53:11-03:00"
 title: rosseta stoned
 type: lyrics
 ---
-![Image Description](/darthpedro-obsidian/images/Lateralus.png)
-
+{{< youtube qnlhVVwBfew >}}
 
 Alrighty, then ... picture this if you will.
 

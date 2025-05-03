@@ -1,7 +1,7 @@
 ---
-creation date: 2025-04-25 02:32
-modification date: Friday 25th April 2025 02:32:00
-title: El taller y el cronometro
+date: "2025-04-27T22:53:11-03:00"  
+lastmod: "2025-04-27T22:53:11-03:00"
+title: el taller y el cronometro
 ---
 
 # Frases importantes / Subrayadas

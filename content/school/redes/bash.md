@@ -1,7 +1,7 @@
 ---
-creation date: 2025-04-25 02:44
-modification date: Friday 25th April 2025 02:44:41
-title: bash
+date: "2025-04-27T22:53:11-03:00"  
+lastmod: "2025-04-27T22:53:11-03:00"
+title: cuestionario bandit
 ---
 # Cuestionario Bandit
 
