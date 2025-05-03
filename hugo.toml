@@ -55,3 +55,8 @@ style = "github-dark"
   name = "school"
   weight = 2
   url = "school/"
+
+[[menu.main]]
+  name = "misc"
+  weight = 2
+  url = "misc/"
