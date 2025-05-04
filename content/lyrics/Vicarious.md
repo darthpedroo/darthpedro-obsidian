@@ -1,6 +1,6 @@
 ---
-creation date: 2025-05-03 17:13
-modification date: 2025-05-03 17:13
+date: 2025-05-03T21:27:45-03:00
+lastmod: 2025-05-03T21:27:45-03:00
 title: vicarious
 type: lyrics
 ---

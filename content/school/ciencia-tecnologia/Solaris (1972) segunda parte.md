@@ -1,6 +1,6 @@
 ---
-date: 2025-05-03 17:13
-lastmod: 2025-05-03 17:13
+date: 2025-05-03T21:27:45-03:00
+lastmod: 2025-05-03T21:27:45-03:00
 title: solaris segunda parte
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426011333.png)
