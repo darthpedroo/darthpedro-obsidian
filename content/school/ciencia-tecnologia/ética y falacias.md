@@ -74,28 +74,34 @@ Si alguien usa esta falacia y los lectores **se dan cuenta**, pueden ponerse en 
 El uso de la amenaza o el miedo como premisas de un argumento. Se busca coaccionar a alguien **sugiriendo** que si no concuerdan con el argumento sufrirán consecuencias graves.
 
 
+### 5) El argumento contra la persona (ad hominem)
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503215410.png)
 
+Un argumento ad hominem es aquel en el que el ataque se dirige , no contra la conclusión, sino contra una persona que defiende la conclusión en disputa. Se puede dar de dos maneras:
 
+#### Ad hominem ofensivo
 
+Se puede menospreciar la calidad personal de quien enunica un argumento, **negar su intelegencia, cuestionar su entendimiento, etc.** Sin embargo, la **CALIDAD PERSONAL** de un individuo es **IRRELEVANTE** para determinar la verdad o falsedad de un enunciado.
 
+Una propuesta puede descalificarse como "poco valiosa" por ser apoyada por **"radicales"**
 
+También existe el ad hominem de **culpable por asociación** -> Sócrates fue condenado , en gran parte por asociarse con personas que se sabía que eran desleales a Atenas.
 
+#### Ad Hominem circunstancial
 
+Las circunstanciad de quien hace una afirmación **no tienen más peso en la verdad de lo que afirma** -> El error que se comete es **utilizar las circunsantcias personales como premisa de un argumento en contra.**
 
+**EJ:** Se puede sugerir injustamente que:
 
+- Un papa acepte una proposición dada porque su negación sería incompatible con la biblia
+- Un candidato político acepte una medida tomada solo porque forma parte del partido político.
 
+### 6) Conclusión irrelevante ( ignoratio elenchi )
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503220921.png)
 
+Estos argumentos triunfan porque **distraen nuestra atención** 
 
-
-
-
-
-
-
-
-
-
-
+Podemos decir que **todas las falacias de relevancia tienen un cierto grado de ignoratio elenchi**. Sin embargo, esta falacia se usa cuando se pierde el punto de manera **sustantiva**. No en base a un ataque (ad hominem) o a una apelación emocional (ad populum)
 
 
 ## Falacias de inducción deficiente
@@ -105,6 +111,45 @@ La equivocación surge por el hecho de que las premisas del argumento son **TAN 
 - La apelación inapropiada a la autoridad
 - Causa Falsa
 - Generalización precipitada
+
+### 1) Argumento por ignorancia ( ad ignorantiam )
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503222201.png)
+
+Es falaz argumentar que una proposición es **verdadera** simplemente porque no se probó que esta sea **falsa**.
+
+Es igualmente falaz argumentar que una proposición es **falsa** porque no se probó que esta sea **verdadera**.
+
+Nuestra ignorancia acerca de como probar o desaprobar una proposición no establece su verdad.
+
+Ejemplo: 
+
+Galileo vio montañas/irregularidades en la luna, dijo que la luna no era plana.
+
+Los estudiantes de aristoteles le dijeron que en realidad, las irregularidades estaban llenas de **una sustancia cristalina invisible** haciendo que fuera una esfera perfecta. Galileo no lo pudo refutar ( ad ignorantiam)
+
+Sin embargo, galileo planteó que podían exister montañas cristalinas tan invisibles como el relleno cristalino (ad ignorantiam!).
+
+### 2) Apelación inapropiada a la autoridad ( ad verecundiam )
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ## Falacias de presuposición
 Surgen porque se **asume demasiado en las premisas** 
