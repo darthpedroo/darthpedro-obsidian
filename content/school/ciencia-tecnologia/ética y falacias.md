@@ -23,7 +23,7 @@ Es el tipo de argumento que puede parecer correcto, pero que mediante una revisi
 - El argumento contra la persona
 - Conclusión irrelevante
 
-### Ad Populum
+### 1) Ad Populum
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503205156.png)
 
 Se trata de un argumento que está defendido por premisas que están **dirigidas a las emociones.**
@@ -49,12 +49,12 @@ En un jurado se dicen los castigos que tendrá el acusado antes de empezar el ju
 
 *Un abogado que pretended una indemnización por daños y perjuicios para las lesiones de un cliente, buscará una forma conmovedora de revelar al jurado la discapacidad peristente de su cliente*
 
-### La pista falsa
+### 2) La pista falsa
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503210134.png)
 
 Se desvía la atención. Los lectores son distraídos por algún aspecto del tema bajo discusión que los aparta de este y que **NO ES RELEVANTE PARA LA VERDAD DE LO QUE SE DEBATÍA.**
 
-### El hombre de paja
+### 3) El hombre de paja
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503211238.png)
 
 Esta falacia busca reducir el argumento de nuestro adversario a uno **fácil de destruir**.
@@ -67,7 +67,7 @@ Los argumentos del hombre de paja asumen que tal o cual posición **adopta el pu
 
 Si alguien usa esta falacia y los lectores **se dan cuenta**, pueden ponerse en contra por lo absurdo y extremista de esta falacia. 
 
-### Apelación a la fuerza (ad baculum)
+### 4) Apelación a la fuerza (ad baculum)
 
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503212007.png)
 
