@@ -1,6 +1,6 @@
 ---
-creation date: 2025-04-26 01:17
-modification date: Saturday 26th April 2025 01:17:33
+creation date: 2025-05-03 17:13
+modification date: 2025-05-03 17:13
 title: Dekalogo capitulo 1
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426012055.png)

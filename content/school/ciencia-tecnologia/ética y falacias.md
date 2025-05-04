@@ -1,6 +1,6 @@
 ---
 date: 2025-05-03 17:13
-lastmod: Saturday 3rd May 2025 17:13:19
+lastmod: 2025-05-03 17:13
 title: ética y falacias
 ---
 # ¿Qué es una falacia?
@@ -67,7 +67,12 @@ Los argumentos del hombre de paja asumen que tal o cual posición **adopta el pu
 
 Si alguien usa esta falacia y los lectores **se dan cuenta**, pueden ponerse en contra por lo absurdo y extremista de esta falacia. 
 
-### Apelación a la fuerza
+### Apelación a la fuerza (ad baculum)
+
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250503212007.png)
+
+El uso de la amenaza o el miedo como premisas de un argumento. Se busca coaccionar a alguien **sugiriendo** que si no concuerdan con el argumento sufrirán consecuencias graves.
+
 
 
 

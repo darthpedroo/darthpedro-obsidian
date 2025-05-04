@@ -1,6 +1,6 @@
 ---
-date: "2025-04-27T22:53:11-03:00"  
-lastmod: "2025-04-27T22:53:11-03:00"
+date: 2025-05-03 17:13
+lastmod: 2025-05-03 17:13
 title: solaris segunda parte
 ---
 ![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250426011333.png)

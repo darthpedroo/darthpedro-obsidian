@@ -1,6 +1,6 @@
 ---
-date: 2025-04-27T21:34:00
-lastmod: 2025-04-27T21:34:13
+date: 2025-05-03 17:13
+lastmod: 2025-05-03 17:13
 title: Politics and the English Language v-2
 ---
 [Source](https://www.writingclasses.com/toolbox/tips-masters/george-orwell-6-questions-6-rules)

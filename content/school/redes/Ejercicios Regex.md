@@ -1,6 +1,6 @@
 ---
-creation date: 2025-04-25 18:09
-modification date: Friday 25th April 2025 18:09:17
+creation date: 2025-05-03 17:13
+modification date: 2025-05-03 17:13
 title: Ejercicios Regex
 ---
 ## Lesson 4: Excluding specific characters
