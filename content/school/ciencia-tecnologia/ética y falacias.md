@@ -208,6 +208,8 @@ Se busca discutir si la naturaleza **continuará** comportandose regularmente, q
 
 
 ## Falacias de ambiguedad
+
+
 Surgen por el **uso equívoco de palabras o frases en las premisas**
 
 - Equivocación
@@ -215,3 +217,70 @@ Surgen por el **uso equívoco de palabras o frases en las premisas**
 - Acento
 - Composición
 - División
+
+### 1) Equivocación
+[clear speaking](obsidian://open?vault=public-notes&file=public%2Fmisc%2FPolitics%20and%20the%20English%20Language)
+
+
+Esta falacia surge cuando se confunden varios signficiados de una palabra o frase.
+
+**EJ:**
+
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250504134306.png)
+
+#### 1.2 ) Equivocación de terminos relativos
+
+El termino "alto" o "grande" es relativo.
+
+Es falaz decir que un elefante pequeño es un animal pequeño.
+
+
+### 2) Anfibiología
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250504135108.png)
+
+Se argumenta a partir de premisas cuya formulación es ambigua debido a su construcción gramatical. 
+Un enunciado es anfíbolo cuando su significado es indeterminado debido a la manera poco precisa o extraña en la que se combinan sus palabras.
+
+
+### 3) Acento
+
+Cuando una premisa depende para su significado **de cierto énfasis**, pero se extrae una conclusión de ella que depende del significado de las mismas palabras enfatizadas de manera diferente.
+
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250504135804.png)
+
+**Otro ejemplo:**
+
+![Image Description](/darthpedro-obsidian/images/Pasted%20image%2020250504140107.png)
+
+
+
+### 4) Composición
+**Se aplica a dos tipos muy relacionados de argumentos equivocados:**
+
+**1) Razonar de manera falaz a partir de los atributos de las partes de un todo a los atributos del todo en sí.**
+
+"Puesto que cada parte de la máquina es ligera de peso , la máquina en conjunto es ligera."
+"Cada escena de la pelicula tiene composicón artistica. La pelicula es artistica."
+
+**2) Razonar a partir de los atributos de los elementos individuales o miembros de un grupo de atributos alos atributos del grupo o a la totalidad de estos elementos.**
+
+Sería falaz argumentar que debido a que un bondi usa más nafta que un auto, entonces todos los bondis usan más nafta que todos los autos. 
+
+Aca está la diferencia entre el uso **distributivo y colectivo**
+
+"Los estudiantes no pueden inscribirse a más de 6 materias diferentes. Sin embargo, los estudiantes se inscriben en cientos de materias cada bimestre."
+
+### 5) División
+Esta es la inversa a la falacia de composición.
+
+**1) Argumentar falazmente que lo que es verdadero para una totalidad también debe er verdadero para sus partes**
+
+Mercado libre es muy importante -> Pepe Dop es funcionario de Mercado Libre entonces es muy importante.
+
+**2) Se argumenta a partir de los atributos de una colección de elementos a los atributos de los elementos en sí.**
+
+Los estudiantes universitarios estudian **medicina, derecho, ingeniería, odontología y arquitectura**. Entonces, todos los estudiantes universitarios estudian **medicna, derecho, ingeniería, odontología y arquitectura.**
+
+¿Por qué las ovejas blancas comen más que las negras? -> Porque hay más ovejas blancas
+
+Se pasa de un distributivo a un colectivo.
