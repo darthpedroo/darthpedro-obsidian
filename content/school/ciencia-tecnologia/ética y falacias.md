@@ -219,8 +219,6 @@ Surgen por el **uso equívoco de palabras o frases en las premisas**
 - División
 
 ### 1) Equivocación
-[clear speaking](obsidian://open?vault=public-notes&file=public%2Fmisc%2FPolitics%20and%20the%20English%20Language)
-
 
 Esta falacia surge cuando se confunden varios signficiados de una palabra o frase.
 
